@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Découvrir en Photos | Château Fort de Roquetaillade</title>
+  <meta name="description" content="Photographies du Château Fort de Roquetaillade à Mazères en Gironde : forteresses médiévales, salons de Viollet-le-Duc, chapelle, cuisine et métairie.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== BANDEAU DE CONTACT DIRECT ==================== -->
+  <aside class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left">
+        <span class="topbar-badge">Site officiel</span>
+        <span>Mazères, Gironde — Le joyau médiéval de Bordeaux</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:0556761416" class="topbar-phone">
+          <i class="fa-solid fa-phone"></i> 05.56.76.14.16
+        </a>
+        <a href="mailto:roquetaillade@hotmail.com" class="topbar-email">
+          <i class="fa-regular fa-envelope"></i> roquetaillade@hotmail.com
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== NAVIGATION EN ONGLETS ==================== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-crest">R</div>
+        <div class="brand-text">
+          <span class="brand-title">Château Fort de Roquetaillade</span>
+          <span class="brand-subtitle">Mazères • Gironde</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-tabs">
+          <li><a href="index.html" class="nav-tab-link">Accueil</a></li>
+          <li><a href="visite.html" class="nav-tab-link">Visite & Tarifs</a></li>
+          <li><a href="reception.html" class="nav-tab-link">Réceptions</a></li>
+          <li><a href="decouvrir.html" class="nav-tab-link active">Photos & Découverte</a></li>
+          <li><a href="actualites.html" class="nav-tab-link">Travaux & Métairie</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu de navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== CONTENU : PHOTOS & DÉCOUVERTE ==================== -->
+  <main class="main-wrapper">
+
+    <div class="page-header">
+      <span class="page-category">Galerie du domaine</span>
+      <h1 class="page-title">Découvrir Roquetaillade en Photos</h1>
+      <p class="page-intro">
+        Aperçu des deux châteaux forts, des appartements et décors peints par Viollet-le-Duc, de la chapelle, de la cuisine et de la métairie.
+      </p>
+    </div>
+
+    <!-- Galerie photo avec légendes strictes -->
+    <div class="gallery-grid">
+
+      <!-- 1 -->
+      <article class="gallery-item">
+        <img src="assets/images/chateau-panorama.jpg" alt="Le Château Neuf de Roquetaillade" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>Le Château Neuf</strong>
+          Forteresse médiévale élevée au début du XIVᵉ siècle.
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="gallery-item">
+        <img src="assets/images/chateau-vieux.jpg" alt="Le Château Vieux de Roquetaillade" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>Le Château Vieux</strong>
+          Vestiges de la première forteresse du XIIᵉ siècle.
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="gallery-item">
+        <img src="assets/images/interieur-viollet.jpg" alt="Salons d'Eugène Viollet-le-Duc" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>Salons de Viollet-le-Duc</strong>
+          Décors néogothiques polychromes et mobilier d'époque.
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="gallery-item">
+        <img src="assets/images/chapelle-viollet.jpg" alt="La Chapelle du Château" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>La Chapelle</strong>
+          Visite incluse dans le parcours guidé du château.
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="gallery-item">
+        <img src="assets/images/chambre-viollet.jpg" alt="Chambre seigneuriale" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>Chambre seigneuriale</strong>
+          Appartements meublés et restaurés au XIXᵉ siècle.
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="gallery-item">
+        <img src="assets/images/cuisine-medievale.jpg" alt="La cuisine du château" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>La grande cuisine</strong>
+          Découverte comprise dans le tarif de visite guidée.
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="gallery-item">
+        <img src="assets/images/cheminee-detail.jpg" alt="Cheminée sculptée par Viollet-le-Duc" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>Détails sculptés</strong>
+          L'œuvre architecturale et décorative de Viollet-le-Duc.
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="gallery-item">
+        <img src="assets/images/metairie-ferme.jpg" alt="La Métairie de Roquetaillade" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>La Métairie</strong>
+          Musée vivant reconstituant la vie d'une famille de métayers.
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="gallery-item">
+        <img src="assets/images/vaches-bazadaises.jpg" alt="Vaches bazadaises à Roquetaillade" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>Animaux de ferme gasconne</strong>
+          Cochons gascons et vaches bazadaises sur le domaine.
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="gallery-item">
+        <img src="assets/images/parc-nature.jpg" alt="Parc Natura 2000" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>Parc Natura 2000</strong>
+          Parc boisé ouvert de 14h30 à 17h00.
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="gallery-item">
+        <img src="assets/images/reception-salle.jpg" alt="Salles de réception du château" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>Salles de réception</strong>
+          Espaces de 100 m² et 200 m² attenantes pour événements.
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="gallery-item">
+        <img src="assets/images/ostrea-guinguette.jpg" alt="Guinguette L'Ostrea" class="gallery-thumb" onclick="openPhoto(this.src)">
+        <div class="gallery-desc">
+          <strong>L'Ostrea Guinguette</strong>
+          Située à la Métairie de Roquetaillade (renseignement : 06.38.46.71.57).
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- ==================== PIED DE PAGE ==================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h3 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Château Fort de Roquetaillade</h3>
+        <p style="font-size: 0.92rem; max-width: 400px;">
+          Le joyau médiéval de Bordeaux — Mazères, Gironde.<br>
+          roquetaillade@hotmail.com • 05.56.76.14.16
+        </p>
+      </div>
+      <div>
+        <h4 style="font-size: 0.95rem; margin-bottom: 0.8rem; color: var(--c-stone-900);">Pages du site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="visite.html">Horaires & Tarifs</a></li>
+          <li><a href="reception.html">Réceptions</a></li>
+          <li><a href="decouvrir.html">Photos & Découverte</a></li>
+          <li><a href="actualites.html">Travaux & Métairie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size: 0.95rem; margin-bottom: 0.8rem; color: var(--c-stone-900);">Guides de visite</h4>
+        <div class="languages-list">
+          <span class="language-tag">Français</span>
+          <span class="language-tag">English</span>
+          <span class="language-tag">Deutsch</span>
+          <span class="language-tag">Italiano</span>
+          <span class="language-tag">Español</span>
+          <span class="language-tag">Flemish</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Château Fort de Roquetaillade — Mazères, Gironde.</span>
+      <span>Paiement par chèque ou espèces sur place.</span>
+    </div>
+  </footer>
+
+  <!-- Modal photo simple -->
+  <div class="photo-modal" id="photoModal">
+    <button class="photo-modal-close" onclick="closePhoto()">&times;</button>
+    <img src="" alt="Vue agrandie" class="photo-modal-img" id="photoModalImg">
+  </div>
+
+  <script>
+    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+      document.querySelector('.nav-tabs').classList.toggle('open');
+    });
+
+    function openPhoto(src) {
+      document.getElementById('photoModalImg').src = src;
+      document.getElementById('photoModal').classList.add('active');
+    }
+
+    function closePhoto() {
+      document.getElementById('photoModal').classList.remove('active');
+    }
+
+    document.getElementById('photoModal').addEventListener('click', function(e) {
+      if (e.target === this) closePhoto();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Château Fort de Roquetaillade | Le joyau médiéval de Bordeaux</title>
+  <meta name="description" content="Site officiel du Château Fort de Roquetaillade à Mazères en Gironde. Visites guidées, horaires, tarifs 2026, réceptions et métairie.">
+
+  <!-- Polices Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION FLOTTANTE & ÉPURÉE ==================== -->
+  <div class="navbar-wrapper">
+    <header class="navbar">
+      <a href="#hero" class="brand">
+        <div class="brand-crest">R</div>
+        <div class="brand-title">Roquetaillade</div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#pratique">Infos Pratiques</a></li>
+          <li><a href="#visite">Visite & Tarifs</a></li>
+          <li><a href="#photos">Le Domaine en Photos</a></li>
+          <li><a href="#receptions">Réceptions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="tel:0556761416" class="nav-contact-btn">
+        <i class="fa-solid fa-phone"></i>
+        <span>05.56.76.14.16</span>
+      </a>
+    </header>
+  </div>
+
+  <!-- ==================== HERO : DIAPORAMA DES PLUS BELLES VUES DU CHÂTEAU ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-slider-wrap">
+      
+      <!-- Slide 1 : Façade monumentale au soleil -->
+      <div class="slide active" data-caption="Le Château Neuf (1306) sous le soleil de Gironde">
+        <img src="assets/images/chateau-frontal-soleil.jpg" alt="Façade majestueuse du Château de Roquetaillade" class="slide-img">
+        <div class="slide-overlay"></div>
+      </div>
+
+      <!-- Slide 2 : La Chapelle et ses fresques exceptionnelles -->
+      <div class="slide" data-caption="La Chapelle néogothique et ses fresques peintes par Viollet-le-Duc">
+        <img src="assets/images/chapelle-viollet.jpg" alt="La Chapelle de Roquetaillade" class="slide-img">
+        <div class="slide-overlay"></div>
+      </div>
+
+      <!-- Slide 3 : Salons polychromes de Viollet-le-Duc -->
+      <div class="slide" data-caption="Salons d'Eugène Viollet-le-Duc et mobilier d'époque">
+        <img src="assets/images/interieur-viollet.jpg" alt="Salons Viollet-le-Duc" class="slide-img">
+        <div class="slide-overlay"></div>
+      </div>
+
+      <!-- Slide 4 : Vue des deux châteaux (Vieux & Neuf) -->
+      <div class="slide" data-caption="Les deux châteaux forts réunis : Château Vieux (XIIᵉ) et Château Neuf (XIVᵉ)">
+        <img src="assets/images/deux-chateaux-vue.jpg" alt="Vue des deux châteaux forts de Roquetaillade" class="slide-img">
+        <div class="slide-overlay"></div>
+      </div>
+
+      <!-- Slide 5 : La chambre rose par Viollet-le-Duc -->
+      <div class="slide" data-caption="Détail des appartements décorés par Viollet-le-Duc">
+        <img src="assets/images/chambre-rose-viollet.jpg" alt="Chambre décorée par Viollet-le-Duc" class="slide-img">
+        <div class="slide-overlay"></div>
+      </div>
+
+      <!-- Slide 6 : Le château dans son écrin de verdure -->
+      <div class="slide" data-caption="Roquetaillade dans son parc naturel classé Natura 2000">
+        <img src="assets/images/chateau-prairie-verdure.jpg" alt="Château de Roquetaillade entouré de prairies" class="slide-img">
+        <div class="slide-overlay"></div>
+      </div>
+
+      <!-- Badge indiquant la photo active -->
+      <div class="slide-caption-badge" id="slideBadge">
+        <i class="fa-regular fa-image"></i>
+        <span id="slideCaptionText">Le Château Neuf (1306) sous le soleil de Gironde</span>
+      </div>
+
+      <!-- Contenu textuel concis -->
+      <div class="hero-content">
+        <span class="hero-tag">Mazères • Gironde</span>
+        <h1 class="hero-title">Le joyau médiéval de Bordeaux</h1>
+        <p class="hero-subtitle">
+          Niché dans une zone Natura 2000, Roquetaillade réunit deux forteresses d'exception et l'œuvre spectaculaire d'Eugène Viollet-le-Duc.
+        </p>
+        <div class="hero-actions">
+          <a href="#visite" class="btn btn-moss">
+            <i class="fa-regular fa-clock"></i> Horaires & Tarifs
+          </a>
+          <a href="#pratique" class="btn btn-white">
+            <i class="fa-solid fa-circle-info"></i> Informations pratiques
+          </a>
+        </div>
+      </div>
+
+      <!-- Indicateurs de défilement cliquables (dots) -->
+      <div class="slider-indicators" id="sliderDots">
+        <button class="slider-dot active" onclick="goToSlide(0)"></button>
+        <button class="slider-dot" onclick="goToSlide(1)"></button>
+        <button class="slider-dot" onclick="goToSlide(2)"></button>
+        <button class="slider-dot" onclick="goToSlide(3)"></button>
+        <button class="slider-dot" onclick="goToSlide(4)"></button>
+        <button class="slider-dot" onclick="goToSlide(5)"></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== LES 4 RÉPONSES ESSENTIELLES (ANTI-APPELS) ==================== -->
+  <section class="essentials-section" id="pratique">
+    <div class="essentials-grid">
+      
+      <!-- 1. Paiement & Espèces -->
+      <div class="essential-card highlight">
+        <div class="essential-header">
+          <div class="essential-icon icon-wallet"><i class="fa-solid fa-coins"></i></div>
+          <h3 class="essential-title">Paiement sur place</h3>
+        </div>
+        <p class="essential-text">
+          <strong>Chèque ou espèces vivement recommandés.</strong><br>
+          La carte bancaire est acceptée mais <em>le réseau bancaire au château est très faible et souvent instable</em>. Prévoyez de l'argent liquide pour entrer sans attente !
+        </p>
+      </div>
+
+      <!-- 2. Chiens -->
+      <div class="essential-card">
+        <div class="essential-header">
+          <div class="essential-icon icon-dog"><i class="fa-solid fa-dog"></i></div>
+          <h3 class="essential-title">Animaux de compagnie</h3>
+        </div>
+        <p class="essential-text">
+          <strong>Chiens interdits dans le parc et le château</strong>, à l'exception unique des petits chiens <strong>portés dans les bras ou en sac</strong> pendant toute la durée de la visite.
+        </p>
+      </div>
+
+      <!-- 3. Pique-nique -->
+      <div class="essential-card">
+        <div class="essential-header">
+          <div class="essential-icon icon-basket"><i class="fa-solid fa-utensils"></i></div>
+          <h3 class="essential-title">Pique-nique autorisé</h3>
+        </div>
+        <p class="essential-text">
+          <strong>Vous pouvez pique-niquer</strong> librement dans le parc arboré du château aux heures d'ouverture (dès 14h30) en respectant la propreté de la zone protégée Natura 2000.
+        </p>
+      </div>
+
+      <!-- 4. Sans réservation -->
+      <div class="essential-card">
+        <div class="essential-header">
+          <div class="essential-icon icon-clock"><i class="fa-regular fa-calendar-check"></i></div>
+          <h3 class="essential-title">Sans réservation</h3>
+        </div>
+        <p class="essential-text">
+          <strong>Pas besoin de réserver ni d'appeler</strong> pour les visiteurs individuels : venez directement sur place. Visites guidées tous les jours à <strong>15h et 16h</strong> (parc ouvert dès 14h30).
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 1. VISITE & TARIFS ==================== -->
+  <section class="section" id="visite">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">Préparer votre venue</span>
+        <h2 class="section-title">Horaires & Tarifs 2026</h2>
+      </div>
+      <span style="font-size: 0.9rem; color: var(--c-muted);">Durée de la visite guidée : 1h</span>
+    </div>
+
+    <div class="visit-container">
+      <!-- Horaires officiels -->
+      <div class="visit-card">
+        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Calendrier des départs de visite</h3>
+        <div>
+          <div class="schedule-row">
+            <span class="schedule-period">À partir de Pâques jusqu'au 30 juin</span>
+            <span class="schedule-time">Tous les jours à 15h et 16h</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-period">Juillet et août</span>
+            <span class="schedule-time">Tous les jours : 10h30 à 18h <small style="display:block; font-weight:400; color:var(--c-muted);">(Dernière visite à 17h)</small></span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-period">Du 1er septembre au 1er novembre 2026</span>
+            <span class="schedule-time">Tous les jours à 15h et 16h</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-period">Vacances d'hiver (Zone Bordeaux) & Noël</span>
+            <span class="schedule-time">Tous les jours à 15h et 16h</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-period">Dimanches hors saison & Jours fériés (sf 25 déc)</span>
+            <span class="schedule-time">Visites à 15h et 16h</span>
+          </div>
+        </div>
+
+        <div style="background: var(--c-subtle); padding: 0.9rem 1.1rem; border-radius: 8px; font-size: 0.9rem; margin-top: 1.2rem; color: var(--c-muted);">
+          <strong style="color: var(--c-text);">Horaires du parc :</strong> Le parc ouvre ses grilles à <strong>14h30</strong> et ferme à <strong>17h00</strong>.
+        </div>
+      </div>
+
+      <!-- Tarifs & Paiement avec avertissement réseau -->
+      <div class="visit-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Tarifs du Château</h3>
+          
+          <div class="price-box">
+            <div class="price-item">
+              <span class="price-label">Adulte</span>
+              <span class="price-figure">11,50 €</span>
+            </div>
+            <div class="price-item">
+              <span class="price-label">Enfant & Étudiant</span>
+              <span class="price-figure">8,50 €</span>
+            </div>
+          </div>
+
+          <!-- ENCART SPÉCIAL RÈGLEMENT -->
+          <div class="payment-box-alert">
+            <h4><i class="fa-solid fa-circle-exclamation"></i> Prévoyez chèques ou espèces</h4>
+            Bien que le terminal bancaire existe, <strong>la connexion réseau est très mauvaise et instable</strong> au château. Pour éviter les pannes de paiement et ne pas perdre de temps, <strong>le règlement par chèque ou en espèces est à privilégier</strong>.
+          </div>
+
+          <p style="font-size: 0.92rem; color: var(--c-muted); line-height: 1.6;">
+            <strong>Le billet comprend :</strong> La visite guidée des appartements, la chapelle, la cuisine historique et l'accès au parc (pique-nique autorisé).
+          </p>
+        </div>
+
+        <div style="margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--c-border); font-size: 0.88rem; color: var(--c-muted);">
+          Guides papier disponibles en 6 langues : FR, EN, DE, IT, ES, NL.<br>
+          <em>Groupes dès 20 pers sur réservation préalable.</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. LE DOMAINE EN PHOTOS ==================== -->
+  <section class="section" id="photos">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">Galerie photographique</span>
+        <h2 class="section-title">Le Domaine en Images</h2>
+      </div>
+      <span style="font-size: 0.9rem; color: var(--c-muted);">Cliquez sur une photo pour l'agrandir</span>
+    </div>
+
+    <div class="gallery-strip">
+      <!-- 1 : Vue aérienne spectaculaire -->
+      <div class="photo-card" onclick="showModal('assets/images/chateau-aerien.jpg')">
+        <img src="assets/images/chateau-aerien.jpg" alt="Vue aérienne du Château Neuf" class="photo-thumb">
+        <div class="photo-info">
+          <span class="photo-name">Vue d'ensemble du Château Neuf</span>
+          <span class="photo-tag">Architecture</span>
+        </div>
+      </div>
+
+      <!-- 2 : Remparts au soleil -->
+      <div class="photo-card" onclick="showModal('assets/images/chateau-remparts-soleil.jpg')">
+        <img src="assets/images/chateau-remparts-soleil.jpg" alt="Tours et remparts de Roquetaillade" class="photo-thumb">
+        <div class="photo-info">
+          <span class="photo-name">Les tours et remparts médiévaux</span>
+          <span class="photo-tag">Médiéval</span>
+        </div>
+      </div>
+
+      <!-- 3 : La Chapelle -->
+      <div class="photo-card" onclick="showModal('assets/images/chapelle-viollet.jpg')">
+        <img src="assets/images/chapelle-viollet.jpg" alt="La Chapelle peinte" class="photo-thumb">
+        <div class="photo-info">
+          <span class="photo-name">La Chapelle et ses fresques</span>
+          <span class="photo-tag">Viollet-le-Duc</span>
+        </div>
+      </div>
+
+      <!-- 4 : Salons d'apparat -->
+      <div class="photo-card" onclick="showModal('assets/images/interieur-viollet.jpg')">
+        <img src="assets/images/interieur-viollet.jpg" alt="Salons Viollet-le-Duc" class="photo-thumb">
+        <div class="photo-info">
+          <span class="photo-name">Salons polychromes d'apparat</span>
+          <span class="photo-tag">Décors</span>
+        </div>
+      </div>
+
+      <!-- 5 : Chambre rose Viollet-le-Duc -->
+      <div class="photo-card" onclick="showModal('assets/images/chambre-rose-viollet.jpg')">
+        <img src="assets/images/chambre-rose-viollet.jpg" alt="Chambre rose par Viollet-le-Duc" class="photo-thumb">
+        <div class="photo-info">
+          <span class="photo-name">Chambre décorée par Viollet-le-Duc</span>
+          <span class="photo-tag">Intérieurs</span>
+        </div>
+      </div>
+
+      <!-- 6 : Cathédrale de Bazas (Patrimoine lié) -->
+      <div class="photo-card" onclick="showModal('assets/images/cathedrale-bazas.jpg')">
+        <img src="assets/images/cathedrale-bazas.jpg" alt="Cathédrale Saint-Jean-Baptiste de Bazas" class="photo-thumb">
+        <div class="photo-info">
+          <span class="photo-name">Cathédrale de Bazas</span>
+          <span class="photo-tag">Patrimoine lié</span>
+        </div>
+      </div>
+
+      <!-- 7 : Les deux châteaux -->
+      <div class="photo-card" onclick="showModal('assets/images/deux-chateaux-vue.jpg')">
+        <img src="assets/images/deux-chateaux-vue.jpg" alt="Château Vieux et Château Neuf" class="photo-thumb">
+        <div class="photo-info">
+          <span class="photo-name">Château Vieux (XIIᵉ) & Neuf (XIVᵉ)</span>
+          <span class="photo-tag">700 ans d'histoire</span>
+        </div>
+      </div>
+
+      <!-- 8 : Vaches bazadaises à la métairie -->
+      <div class="photo-card" onclick="showModal('assets/images/vaches-bazadaises.jpg')">
+        <img src="assets/images/vaches-bazadaises.jpg" alt="Vaches bazadaises à la métairie" class="photo-thumb">
+        <div class="photo-info">
+          <span class="photo-name">La Métairie & Vaches bazadaises</span>
+          <span class="photo-tag">Écomusée</span>
+        </div>
+      </div>
+
+      <!-- 9 : Photo de nuit (Salle synodale & Restauration) -->
+      <div class="photo-card" onclick="showModal('assets/images/chateau-nuit.jpg')">
+        <img src="assets/images/chateau-nuit.jpg" alt="Le Château de Roquetaillade la nuit" class="photo-thumb">
+        <div class="photo-info">
+          <span class="photo-name">Chantier & Salle Synodale</span>
+          <span class="photo-tag">Nocturne & Restauration</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Encart d'explication des travaux de restauration -->
+    <div style="background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--radius); padding: 1.8rem; margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; box-shadow: var(--shadow);">
+      <div style="max-width: 760px;">
+        <h3 style="font-size: 1.15rem; margin-bottom: 0.4rem; color: var(--c-text);">
+          <i class="fa-solid fa-hammer" style="color: var(--c-sand); margin-right: 0.5rem;"></i> Les chantiers de restauration & la Salle Synodale
+        </h3>
+        <p style="font-size: 0.92rem; color: var(--c-muted); margin: 0; line-height: 1.6;">
+          Grâce aux visites, des travaux d'envergure sont menés en continu : toitures, vitraux et création des plafonds peints de la <strong>salle synodale</strong> (inachevée au XIXᵉ siècle par Viollet-le-Duc). Vous pouvez soutenir la sauvegarde du château via la <strong>Fondation de France</strong>.
+        </p>
+      </div>
+      <div>
+        <a href="#contact" class="btn btn-outline" style="font-size: 0.88rem;">
+          Nous contacter
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. RÉCEPTIONS ==================== -->
+  <section class="section" id="receptions">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">Événements privés & professionnels</span>
+        <h2 class="section-title">Les Réceptions à Roquetaillade</h2>
+      </div>
+      <span style="font-size: 0.9rem; color: var(--c-muted);">Un décor de cinéma d'exception</span>
+    </div>
+
+    <div class="reception-split">
+      <div class="reception-visual">
+        <img src="assets/images/reception-salle.jpg" alt="Salles de réception du château de Roquetaillade">
+      </div>
+      <div class="reception-desc">
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.8rem;">Mariages, Séminaires & Déjeuners</h3>
+        <p style="font-size: 0.98rem; color: var(--c-muted); line-height: 1.7;">
+          Le parc et le château vieux sont des lieux idéals pour recevoir vos invités dans un décor authentique et préservé.
+        </p>
+
+        <div class="spec-pills">
+          <span class="spec-pill"><i class="fa-solid fa-check" style="color: var(--c-moss); margin-right: 0.3rem;"></i> 2 salles communicantes (100 m² + 200 m²)</span>
+          <span class="spec-pill"><i class="fa-solid fa-check" style="color: var(--c-moss); margin-right: 0.3rem;"></i> Déjeuners de groupes dès 30 personnes</span>
+          <span class="spec-pill"><i class="fa-solid fa-check" style="color: var(--c-moss); margin-right: 0.3rem;"></i> Grand parc boisé Natura 2000</span>
+        </div>
+
+        <div>
+          <a href="#contact" class="btn btn-moss">
+            <i class="fa-regular fa-envelope"></i> Nous contacter pour un événement
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. CONTACT & ACCÈS DIRECT ==================== -->
+  <section class="section" id="contact">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">Coordonnées directes</span>
+        <h2 class="section-title">Venir & Nous Contacter</h2>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Coordonnées claires -->
+      <div class="contact-card">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Château Fort de Roquetaillade</h3>
+        <p style="color: var(--c-muted); font-size: 0.95rem;">33210 Mazères (Gironde) • À 10 min de Langon (A62)</p>
+
+        <a href="tel:0556761416" class="contact-phone-big">
+          <i class="fa-solid fa-phone" style="font-size: 1.4rem; margin-right: 0.5rem;"></i>05.56.76.14.16
+        </a>
+
+        <div style="margin-bottom: 1rem; font-size: 0.95rem;">
+          <strong>Courriel :</strong> <a href="mailto:roquetaillade@hotmail.com" style="color: var(--c-moss); text-decoration: underline;">roquetaillade@hotmail.com</a>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--c-muted); line-height: 1.6;">
+          • Particuliers : <strong>sans réservation</strong> aux horaires de visite.<br>
+          • Groupes & scolaires : sur rendez-vous toute l'année.<br>
+          • Guinguette L'Ostrea (Métairie) : 06.38.46.71.57.
+        </p>
+      </div>
+
+      <!-- Formulaire concis -->
+      <div class="contact-card">
+        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Envoyer un mot au château</h3>
+        <form onsubmit="event.preventDefault(); alert('Votre message a été transmis à roquetaillade@hotmail.com'); this.reset();" style="display: flex; flex-direction: column; gap: 1rem;">
+          <input type="text" placeholder="Votre nom" required style="padding: 0.75rem 1rem; border: 1px solid var(--c-border); border-radius: 8px; font-family: inherit; font-size: 0.95rem;">
+          <input type="email" placeholder="Votre courriel" required style="padding: 0.75rem 1rem; border: 1px solid var(--c-border); border-radius: 8px; font-family: inherit; font-size: 0.95rem;">
+          <textarea rows="3" placeholder="Votre demande (visite de groupe, réception, tournage)..." required style="padding: 0.75rem 1rem; border: 1px solid var(--c-border); border-radius: 8px; font-family: inherit; font-size: 0.95rem;"></textarea>
+          <button type="submit" class="btn btn-moss" style="align-self: flex-start;">
+            Envoyer le message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PIED DE PAGE ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Château Fort de Roquetaillade</strong> — Mazères, Gironde.
+      </div>
+      <div>
+        Pique-nique autorisé dans le parc • Chiens admis uniquement portés
+      </div>
+      <div>
+        Chèques ou espèces recommandés
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal photo simple -->
+  <div class="modal" id="photoModal">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <img src="" alt="Agrandissement" class="modal-img" id="modalImg">
+  </div>
+
+  <script>
+    // ==================== CARROUSEL AUTOMATIQUE EN DOUCEUR ====================
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    const captionEl = document.getElementById('slideCaptionText');
+    let sliderTimer = null;
+
+    function goToSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      
+      currentSlide = (index + slides.length) % slides.length;
+      
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+      
+      const caption = slides[currentSlide].getAttribute('data-caption');
+      if (captionEl && caption) {
+        captionEl.textContent = caption;
+      }
+
+      resetTimer();
+    }
+
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+
+    function resetTimer() {
+      if (sliderTimer) clearInterval(sliderTimer);
+      sliderTimer = setInterval(nextSlide, 5000); // Défilement toutes les 5 secondes
+    }
+
+    // Démarrage du slider
+    resetTimer();
+
+    // ==================== LIGHTBOX PHOTO ====================
+    function showModal(src) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('photoModal').classList.add('active');
+    }
+    function closeModal() {
+      document.getElementById('photoModal').classList.remove('active');
+    }
+    document.getElementById('photoModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+  </script>
+</body>
+</html>

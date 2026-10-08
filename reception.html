@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Réceptions à Roquetaillade | Mariages, Séminaires, Groupes</title>
+  <meta name="description" content="Les Réceptions à Roquetaillade : un décor d'exception pour tous vos événements, mariages, séminaires. 2 salles de 100 m² et 200 m² communicantes.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== BANDEAU DE CONTACT DIRECT ==================== -->
+  <aside class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left">
+        <span class="topbar-badge">Site officiel</span>
+        <span>Mazères, Gironde — Le joyau médiéval de Bordeaux</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:0556761416" class="topbar-phone">
+          <i class="fa-solid fa-phone"></i> 05.56.76.14.16
+        </a>
+        <a href="mailto:roquetaillade@hotmail.com" class="topbar-email">
+          <i class="fa-regular fa-envelope"></i> roquetaillade@hotmail.com
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== NAVIGATION EN ONGLETS ==================== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-crest">R</div>
+        <div class="brand-text">
+          <span class="brand-title">Château Fort de Roquetaillade</span>
+          <span class="brand-subtitle">Mazères • Gironde</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-tabs">
+          <li><a href="index.html" class="nav-tab-link">Accueil</a></li>
+          <li><a href="visite.html" class="nav-tab-link">Visite & Tarifs</a></li>
+          <li><a href="reception.html" class="nav-tab-link active">Réceptions</a></li>
+          <li><a href="decouvrir.html" class="nav-tab-link">Photos & Découverte</a></li>
+          <li><a href="actualites.html" class="nav-tab-link">Travaux & Métairie</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu de navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== CONTENU : RÉCEPTIONS ==================== -->
+  <main class="main-wrapper">
+
+    <div class="page-header">
+      <span class="page-category">Événements & Réceptions</span>
+      <h1 class="page-title">Les Réceptions à Roquetaillade</h1>
+      <p class="page-intro">
+        Un décor d'exception pour tous vos événements ! Rien de mieux qu’un décor de cinéma pour organiser des réceptions tels mariages, séminaires... Le parc et le château vieux sont des lieux idéals pour recevoir.
+      </p>
+    </div>
+
+    <div class="grid-2" style="margin-bottom: 3rem;">
+      <div>
+        <section class="info-card" style="margin-bottom: 2rem;">
+          <h2 style="font-size: 1.35rem; margin-bottom: 1rem;">Espaces de Réception</h2>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; font-size: 1rem; color: var(--c-stone-700);">
+            <li style="display: flex; gap: 0.8rem; align-items: flex-start;">
+              <i class="fa-solid fa-check" style="color: var(--c-sage-dark); margin-top: 0.2rem;"></i>
+              <div>
+                <strong style="color: var(--c-stone-900);">2 salles de réception :</strong><br>
+                Une salle de <strong>100 m²</strong> + une salle de <strong>200 m²</strong> attenantes par deux portes doubles battants.
+              </div>
+            </li>
+            <li style="display: flex; gap: 0.8rem; align-items: flex-start;">
+              <i class="fa-solid fa-check" style="color: var(--c-sage-dark); margin-top: 0.2rem;"></i>
+              <div>
+                <strong style="color: var(--c-stone-900);">Le Parc & le Château Vieux :</strong><br>
+                Des cadres d'exception pour cocktails, vins d'honneur et rassemblements en extérieur.
+              </div>
+            </li>
+            <li style="display: flex; gap: 0.8rem; align-items: flex-start;">
+              <i class="fa-solid fa-check" style="color: var(--c-sage-dark); margin-top: 0.2rem;"></i>
+              <div>
+                <strong style="color: var(--c-stone-900);">Repas de groupes :</strong><br>
+                Les groupes à partir de <strong>30 personnes</strong> peuvent déjeuner à Roquetaillade après leur visite.
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Formulaire de contact direct réception -->
+        <section class="info-card info-card-ochre">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.8rem; color: var(--c-stone-900);">Pour en savoir plus, contactez-nous</h3>
+          <p style="font-size: 0.92rem; margin-bottom: 1.2rem;">
+            Renseignements et réservations par téléphone au <strong>05.56.76.14.16</strong> ou par courriel à <strong>roquetaillade@hotmail.com</strong>.
+          </p>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Votre demande de réception a été transmise.'); this.reset();">
+            <div class="form-group">
+              <label class="form-label">Votre nom</label>
+              <input type="text" class="form-control" required placeholder="Nom et prénom">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Votre téléphone ou courriel</label>
+              <input type="text" class="form-control" required placeholder="06.. ou email">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Type d'événement (mariage, séminaire, repas de groupe)</label>
+              <input type="text" class="form-control" required placeholder="Précisez votre projet...">
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+              Envoyer ma demande
+            </button>
+          </form>
+        </section>
+      </div>
+
+      <!-- Photographies des espaces -->
+      <div>
+        <div style="background: #FFFFFF; border: 1px solid var(--c-stone-200); border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+          <img src="assets/images/reception-salle.jpg" alt="Salle de réception voûtée de Roquetaillade" style="width: 100%; height: 320px; object-fit: cover; display: block;">
+          <div style="padding: 1rem 1.25rem; font-size: 0.9rem; color: var(--c-stone-700);">
+            <strong style="color: var(--c-stone-900);">Salles de réception du château</strong>
+            Espaces de 100 m² et 200 m² avec voûtes et pierres de taille pour vos événements.
+          </div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--c-stone-200); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+          <img src="assets/images/parc-nature.jpg" alt="Le parc du château" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+          <div style="padding: 1rem 1.25rem; font-size: 0.9rem; color: var(--c-stone-700);">
+            <strong style="color: var(--c-stone-900);">Le Parc et le cadre naturel</strong>
+            Zone Natura 2000 propice aux cocktails et réceptions de plein air.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==================== PIED DE PAGE ==================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h3 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Château Fort de Roquetaillade</h3>
+        <p style="font-size: 0.92rem; max-width: 400px;">
+          Le joyau médiéval de Bordeaux — Mazères, Gironde.<br>
+          roquetaillade@hotmail.com • 05.56.76.14.16
+        </p>
+      </div>
+      <div>
+        <h4 style="font-size: 0.95rem; margin-bottom: 0.8rem; color: var(--c-stone-900);">Pages du site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="visite.html">Horaires & Tarifs</a></li>
+          <li><a href="reception.html">Réceptions</a></li>
+          <li><a href="decouvrir.html">Photos & Découverte</a></li>
+          <li><a href="actualites.html">Travaux & Métairie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size: 0.95rem; margin-bottom: 0.8rem; color: var(--c-stone-900);">Guides de visite</h4>
+        <div class="languages-list">
+          <span class="language-tag">Français</span>
+          <span class="language-tag">English</span>
+          <span class="language-tag">Deutsch</span>
+          <span class="language-tag">Italiano</span>
+          <span class="language-tag">Español</span>
+          <span class="language-tag">Flemish</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Château Fort de Roquetaillade — Mazères, Gironde.</span>
+      <span>Paiement par chèque ou espèces sur place.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+      document.querySelector('.nav-tabs').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
