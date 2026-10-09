@@ -16,47 +16,102 @@
 </head>
 <body>
 
-  <!-- ==================== NAVIGATION FLOTTANTE & ÉPURÉE ==================== -->
-  <div class="navbar-wrapper">
-    <header class="navbar">
+  <!-- ==================== HEADER ÉPURÉ & FIABLE ==================== -->
+  <header class="site-header">
+    <div class="header-inner">
       <a href="#hero" class="brand">
         <div class="brand-crest">R</div>
-        <div class="brand-title">Roquetaillade</div>
+        <div class="brand-info">
+          <span class="brand-title">Roquetaillade</span>
+          <span class="brand-sub">Château Fort • Gironde</span>
+        </div>
       </a>
 
-      <!-- Menu Bureau -->
-      <nav>
+      <!-- Menu Navigation Desktop -->
+      <nav class="nav-desktop">
         <ul class="nav-links">
           <li><a href="#pratique">Infos Pratiques</a></li>
           <li><a href="#visite">Visite & Tarifs</a></li>
-          <li><a href="#photos">Le Domaine en Photos</a></li>
+          <li><a href="#photos">Photos</a></li>
           <li><a href="#receptions">Réceptions</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Actions : Téléphone direct + Menu Burger Mobile -->
-      <div class="nav-actions">
-        <a href="tel:0556761416" class="nav-contact-btn" aria-label="Appeler le château au 05.56.76.14.16">
+      <!-- Actions Rapides -->
+      <div class="header-actions">
+        <a href="tel:0556761416" class="header-call-btn" aria-label="Appeler le château au 05.56.76.14.16">
           <i class="fa-solid fa-phone"></i>
-          <span>05.56.76.14.16</span>
+          <span class="call-text">05.56.76.14.16</span>
         </a>
 
-        <button class="mobile-burger-btn" id="burgerToggle" aria-label="Ouvrir le menu">
+        <button class="mobile-menu-toggle" id="burgerToggle" aria-label="Menu" aria-expanded="false">
           <i class="fa-solid fa-bars" id="burgerIcon"></i>
         </button>
       </div>
+    </div>
 
-      <!-- Tiroir Déroulant Mobile -->
-      <div class="mobile-menu-drawer" id="mobileDrawer">
-        <a href="#pratique" class="drawer-link"><i class="fa-solid fa-circle-info" style="color:var(--c-sand);margin-right:0.5rem;"></i> Infos Pratiques <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
-        <a href="#visite" class="drawer-link"><i class="fa-regular fa-clock" style="color:var(--c-moss);margin-right:0.5rem;"></i> Visite & Tarifs <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
-        <a href="#photos" class="drawer-link"><i class="fa-regular fa-image" style="color:var(--c-sand);margin-right:0.5rem;"></i> Le Domaine en Photos <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
-        <a href="#receptions" class="drawer-link"><i class="fa-solid fa-champagne-glasses" style="color:var(--c-moss);margin-right:0.5rem;"></i> Réceptions & Mariages <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
-        <a href="#contact" class="drawer-link"><i class="fa-solid fa-location-dot" style="color:var(--c-sand);margin-right:0.5rem;"></i> Accès & Contact <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
+    <!-- Tiroir Navigation Mobile Pleine Largeur sous le header -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-inner">
+        <a href="#pratique" class="drawer-link">
+          <div class="drawer-link-content">
+            <span class="drawer-icon" style="background:#FAF2EA;color:#B37237;"><i class="fa-solid fa-circle-info"></i></span>
+            <div>
+              <span class="drawer-title">Infos Pratiques</span>
+              <span class="drawer-subtitle">Paiement, pique-nique, animaux</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="#visite" class="drawer-link">
+          <div class="drawer-link-content">
+            <span class="drawer-icon" style="background:#EEF4ED;color:#2E432B;"><i class="fa-regular fa-clock"></i></span>
+            <div>
+              <span class="drawer-title">Visites & Tarifs</span>
+              <span class="drawer-subtitle">Horaires 2026, sans réservation</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="#photos" class="drawer-link">
+          <div class="drawer-link-content">
+            <span class="drawer-icon" style="background:#FAF2EA;color:#B37237;"><i class="fa-regular fa-image"></i></span>
+            <div>
+              <span class="drawer-title">Le Domaine en Photos</span>
+              <span class="drawer-subtitle">Forteresses, Viollet-le-Duc, parc</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="#receptions" class="drawer-link">
+          <div class="drawer-link-content">
+            <span class="drawer-icon" style="background:#EEF4ED;color:#2E432B;"><i class="fa-solid fa-champagne-glasses"></i></span>
+            <div>
+              <span class="drawer-title">Réceptions & Mariages</span>
+              <span class="drawer-subtitle">Salons historiques, salle synodale</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <a href="#contact" class="drawer-link">
+          <div class="drawer-link-content">
+            <span class="drawer-icon" style="background:#FAF2EA;color:#B37237;"><i class="fa-solid fa-location-dot"></i></span>
+            <div>
+              <span class="drawer-title">Accès & Contact</span>
+              <span class="drawer-subtitle">Mazères (33210), itinéraire</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right drawer-chevron"></i>
+        </a>
+        <div class="drawer-footer">
+          <a href="tel:0556761416" class="btn btn-moss btn-full">
+            <i class="fa-solid fa-phone"></i> Appeler : 05.56.76.14.16
+          </a>
+        </div>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 
   <!-- ==================== HERO : DIAPORAMA DES PLUS BELLES VUES DU CHÂTEAU ==================== -->
   <section class="hero" id="hero">
@@ -482,17 +537,36 @@
     const mobileDrawer = document.getElementById('mobileDrawer');
 
     if (burgerBtn && mobileDrawer) {
-      burgerBtn.addEventListener('click', () => {
-        const isOpen = mobileDrawer.classList.toggle('open');
-        burgerIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
-      });
-
-      // Fermer le tiroir quand on clique sur un lien
-      document.querySelectorAll('.drawer-link').forEach(link => {
-        link.addEventListener('click', () => {
+      function setDrawerState(open) {
+        if (open) {
+          mobileDrawer.classList.add('open');
+          burgerIcon.className = 'fa-solid fa-xmark';
+          burgerBtn.setAttribute('aria-expanded', 'true');
+        } else {
           mobileDrawer.classList.remove('open');
           burgerIcon.className = 'fa-solid fa-bars';
+          burgerBtn.setAttribute('aria-expanded', 'false');
+        }
+      }
+
+      burgerBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = mobileDrawer.classList.contains('open');
+        setDrawerState(!isOpen);
+      });
+
+      // Fermer le tiroir quand on clique sur un lien de navigation
+      document.querySelectorAll('.drawer-link, .drawer-footer a').forEach(link => {
+        link.addEventListener('click', () => {
+          setDrawerState(false);
         });
+      });
+
+      // Fermer le tiroir si on clique en dehors
+      document.addEventListener('click', (e) => {
+        if (!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)) {
+          setDrawerState(false);
+        }
       });
     }
 
