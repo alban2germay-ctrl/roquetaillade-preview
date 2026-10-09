@@ -3,623 +3,625 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Château de Lantis | Monument Historique privé à Dégagnac (Lot) - Saison 2026</title>
-  <meta name="description" content="Site de présentation du Château de Lantis (Lot) : histoire du XVe siècle, 40 ans de restauration, galerie photos, agenda culturel 2026, gîtes et mariages.">
+  <title>Château de Lantis | Domaine & Forteresse du Quercy (Dégagnac, Lot)</title>
+  <meta name="description" content="Site officiel du Château de Lantis en Bouriane (Lot). Histoire du XVe siècle, 40 ans de restauration, agenda culturel 2026, 3 gîtes de charme, réceptions et visites.">
 
-  <!-- Polices sobres et nobles : EB Garamond & Inter -->
+  <!-- Polices d'institution noble : Libre Baskerville & Source Sans 3 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="estate-layout">
 
-  <!-- Bandeau supérieur d'information directe -->
-  <div class="top-notice">
-    <div class="top-notice-inner">
-      <span>Château ouvert aux visites du 1er avril au 30 septembre 2026 • Groupes toute l'année</span>
-      <span>Renseignements & réservations : <a href="tel:0632960089" class="notice-phone">06 32 96 00 89</a></span>
-    </div>
-  </div>
-
-  <!-- Barre de navigation claire et complète -->
-  <header class="site-header">
-    <div class="header-container">
-      <a href="#accueil" class="brand-block">
-        <div class="brand-symbol">L</div>
-        <div class="brand-text">
-          <h1>Château de Lantis</h1>
-          <span>Monument Historique • Quercy</span>
+  <!-- ==================== SIDEBAR LATÉRALE FIXE (GAUCHE) ==================== -->
+  <aside class="estate-sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      
+      <!-- En-tête Sidebar : Blason & Identité -->
+      <div class="sidebar-brand">
+        <div class="brand-crest-box">
+          <span class="crest-monogram">L</span>
         </div>
-      </a>
+        <div class="brand-meta">
+          <span class="estate-title">CHÂTEAU DE LANTIS</span>
+          <span class="estate-sub">Monument Historique • Quercy</span>
+          <span class="estate-loc"><i class="fa-solid fa-location-dot"></i> Dégagnac (46340, Lot)</span>
+        </div>
+      </div>
 
-      <nav class="main-navigation">
-        <a href="#histoire" class="nav-link">Histoire</a>
-        <a href="#photos" class="nav-link">Photos</a>
-        <a href="#animations" class="nav-link">Agenda 2026</a>
-        <a href="#gites" class="nav-link">Gîtes & Séjours</a>
-        <a href="#visites" class="nav-link">Visites & Tarifs</a>
-        <a href="#mariages" class="nav-link">Mariages</a>
-        <a href="#patrimoine" class="nav-link">Mécénat & Environs</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <a href="tel:0632960089" class="btn-header-call">
-          <i class="fa-solid fa-phone"></i> 06.32.96.00.89
-        </a>
+      <!-- Navigation Verticale Structurée -->
+      <nav class="sidebar-menu">
+        <div class="menu-section-label">Explorer le Domaine</div>
+        <ul class="nav-list">
+          <li><a href="#apercu" class="nav-tab active"><i class="fa-solid fa-compass"></i> Présentation générale</a></li>
+          <li><a href="#histoire" class="nav-tab"><i class="fa-solid fa-scroll"></i> 1460–2026 : 40 ans de fouilles</a></li>
+          <li><a href="#galerie" class="nav-tab"><i class="fa-regular fa-images"></i> Galerie photographique</a></li>
+          <li><a href="#agenda" class="nav-tab"><i class="fa-regular fa-calendar-check"></i> Saison culturelle 2026</a></li>
+          <li><a href="#gites" class="nav-tab"><i class="fa-solid fa-bed"></i> Gîtes 3 épis & hébergements</a></li>
+          <li><a href="#visites" class="nav-tab"><i class="fa-solid fa-ticket"></i> Horaires des visites & tarifs</a></li>
+          <li><a href="#receptions" class="nav-tab"><i class="fa-solid fa-champagne-glasses"></i> Mariages & privatisations</a></li>
+          <li><a href="#mecenat" class="nav-tab"><i class="fa-solid fa-hand-holding-heart"></i> Mécénat & alentours</a></li>
+          <li><a href="#contact" class="nav-tab"><i class="fa-solid fa-envelope"></i> Accès routier & contact</a></li>
+        </ul>
       </nav>
-    </div>
-  </header>
 
-  <!-- ==================== ACCUEIL : LE MONUMENT ==================== -->
-  <section class="hero-landmark" id="accueil">
-    <div class="hero-facade-card">
-      <img src="assets/images/cour-honneur-lantis.jpg" alt="Cour d'honneur et logis du Château de Lantis" class="hero-facade-img">
-      <div class="hero-shadow-overlay"></div>
-
-      <div class="hero-content-panel">
-        <span class="hero-tagline">Dégagnac • Bouriane & Vallée du Lot</span>
-        <h2 class="hero-main-title">Une forteresse médiévale ressuscitée par 40 ans de passion</h2>
-        <p class="hero-description">
-          Ancienne maison forte du XVᵉ siècle dressée au cœur du Quercy, le Château de Lantis a été sauvé des ruines par Françoise et Michel Barbier-Damiette. Aujourd'hui entièrement restauré, le domaine vit au rythme de ses visites guidées, de sa saison culturelle, de ses gîtes et de réceptions privées.
-        </p>
-        <div class="hero-cta-group">
-          <a href="#histoire" class="btn-primary">
-            <i class="fa-solid fa-book-open"></i> Découvrir l'histoire du château
-          </a>
-          <a href="#animations" class="btn-secondary">
-            <i class="fa-regular fa-calendar-days"></i> Consulter l'agenda 2026
-          </a>
+      <!-- Cartouche Contact & Direct Téléphone -->
+      <div class="sidebar-footer">
+        <div class="sidebar-phone-box">
+          <span class="phone-label">Ligne directe propriétaires</span>
+          <a href="tel:0632960089" class="phone-number"><i class="fa-solid fa-phone"></i> 06 32 96 00 89</a>
+          <span class="phone-fixe">Fixe château : 05 65 41 11 47</span>
+        </div>
+        <div class="sidebar-label-vmf">
+          <img src="assets/images/label-vmf.png" alt="Label VMF" class="vmf-mini-logo">
+          <span>Prix Sauvegarde V.M.F. depuis 1993</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ==================== HISTOIRE & RESTAURATION COMPLÈTE ==================== -->
-  <section class="section-common" id="histoire">
-    <div class="history-grid">
-      
-      <div>
-        <span style="font-size:0.85rem;color:var(--c-stone-gold);text-transform:uppercase;font-weight:600;letter-spacing:0.05em;display:block;margin-bottom:0.4rem;">De 1460 à nos jours</span>
-        <h2 class="history-title">Une histoire mouvementée, de la guerre de Cent Ans à la résurrection</h2>
+    </div>
+  </aside>
+
+  <!-- ==================== CONTENU PRINCIPAL FLUIDE (DROITE) ==================== -->
+  <main class="estate-main">
+
+    <!-- 1. APERÇU / EN-TÊTE PANORAMIQUE -->
+    <section class="page-section" id="apercu">
+      <div class="pano-banner">
+        <img src="assets/images/cour-honneur-lantis.jpg" alt="Cour d'honneur et façade du Château de Lantis" class="pano-bg">
+        <div class="pano-gradient"></div>
         
-        <p class="history-lead">
-          Mentionné pour la première fois dans les archives au XVᵉ siècle, Lantis veillait sur la frontière historique entre les possessions françaises et anglaises en Aquitaine.
-        </p>
-
-        <p class="history-text">
-          Édifié sous la forme d'une solide maison forte défensive avec salle des gardes et cul de basse fosse, le château est remanié vers 1625 avec l'adjonction de magnifiques éléments Renaissance : une porte sculptée d'époque, de larges fenêtres à meneaux et un <strong>dallage en étoile d'escarboucle unique en Europe</strong>.
-        </p>
-
-        <p class="history-text">
-          Abandonné après la Révolution française, le domaine subit le pillage de ses pierres et sert pendant plus d'un siècle de décharge publique communale, finissant totalement enseveli sous les gravats et la végétation.
-        </p>
-
-        <div class="timeline-mini">
-          <div class="timeline-item">
-            <div class="timeline-year">1460 • La maison forte</div>
-            <div class="timeline-desc">Édification de la forteresse médiévale après la guerre de Cent Ans pour défendre la frontière quercynoise.</div>
+        <div class="pano-details">
+          <div class="pano-pills">
+            <span class="pill-gold"><i class="fa-solid fa-shield-halved"></i> Forteresse du XVᵉ s.</span>
+            <span class="pill-white"><i class="fa-solid fa-tree"></i> Jardins Renaissance</span>
+            <span class="pill-white"><i class="fa-solid fa-house"></i> Gîtes de charme 3 épis</span>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-year">1625 • L'époque Renaissance</div>
-            <div class="timeline-desc">Agrandissement des logis seigneuriaux, pose du dallage d'escarboucle et porte sculptée d'époque.</div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">1993–2026 • 40 ans de résurrection</div>
-            <div class="timeline-desc">Découverte des ruines enfouies par Françoise et Michel Barbier-Damiette. Quatre décennies de fouilles artisanales récompensées par le prix national des Vieilles Maisons Françaises (VMF).</div>
-          </div>
+          <h2 class="pano-h2">Une demeure seigneuriale vivante, ressuscitée pierre par pierre</h2>
+          <p class="pano-desc">
+            Enfouie sous les ronces et les gravats pendant un siècle après la Révolution, cette ancienne maison forte du Lot a retrouvé tout son éclat grâce à quarante années de fouilles et de restauration menées par Françoise et Michel Barbier-Damiette.
+          </p>
         </div>
       </div>
 
-      <div class="history-visuals">
-        <div class="history-img-frame">
-          <img src="assets/images/gravure-lantis.jpg" alt="Gravure ancienne représentant le Château de Lantis">
-          <div class="img-legend">Dessin historique de la forteresse avant les destructions post-révolutionnaires.</div>
+      <!-- Fiche synthétique 4 métriques clés -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <span class="metric-digit">1460</span>
+          <span class="metric-title">Origine médiévale</span>
+          <p class="metric-text">Édification de la forteresse face aux positions anglaises pendant la guerre de Cent Ans.</p>
         </div>
-
-        <div class="history-img-frame">
-          <img src="assets/images/vue-aerienne-lantis.jpg" alt="Vue aérienne du domaine de Lantis et de la vallée">
-          <div class="img-legend">Vue aérienne actuelle du domaine niché dans les collines boisées de Dégagnac.</div>
+        <div class="metric-card">
+          <span class="metric-digit">1625</span>
+          <span class="metric-title">Époque Renaissance</span>
+          <p class="metric-text">Création de la porte d'honneur sculptée et du dallage en étoile d'escarboucle unique en Europe.</p>
         </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== GALERIE PHOTOS COMPLÈTE ==================== -->
-  <section class="section-common" id="photos">
-    <div class="section-head-simple">
-      <div>
-        <span>Visite en images</span>
-        <h2>Le Château et ses Jardins en photographies</h2>
-      </div>
-      <div>
-        <small style="color:var(--c-muted);">Photographies officielles du domaine</small>
-      </div>
-    </div>
-
-    <div class="gallery-grid">
-      
-      <!-- Photo 1 -->
-      <div class="gallery-card">
-        <div class="gallery-card-img">
-          <img src="assets/images/facade-lantis.webp" alt="Façade du XVe siècle sous le soleil">
+        <div class="metric-card">
+          <span class="metric-digit">40 ans</span>
+          <span class="metric-title">Chantier de passion</span>
+          <p class="metric-text">Sauvegarde intégrale par la famille Barbier-Damiette, récompensée par le prix national VMF.</p>
         </div>
-        <div class="gallery-card-caption">
-          <h4>Le Logis Seigneurial</h4>
-          <p>Façade en pierres calcaires dorées du Quercy, fenêtres à meneaux et toitures en ardoise restaurées.</p>
+        <div class="metric-card">
+          <span class="metric-digit">3 épis</span>
+          <span class="metric-title">Gîtes & Réceptions</span>
+          <p class="metric-text">Deux gîtes de caractère, une suite seigneuriale et privatisation complète pour mariages jusqu'à 150 convives.</p>
         </div>
       </div>
+    </section>
 
-      <!-- Photo 2 -->
-      <div class="gallery-card">
-        <div class="gallery-card-img">
-          <img src="assets/images/cour-honneur-lantis.jpg" alt="Cour d'honneur du château de Lantis">
-        </div>
-        <div class="gallery-card-caption">
-          <h4>La Cour d'Honneur</h4>
-          <p>Espace central pavé desservant la salle des gardes, la chapelle privée et la tour d'escalier.</p>
-        </div>
-      </div>
-
-      <!-- Photo 3 -->
-      <div class="gallery-card">
-        <div class="gallery-card-img">
-          <img src="assets/images/jardin-lantis.webp" alt="Parterres de buis Renaissance taillés">
-        </div>
-        <div class="gallery-card-caption">
-          <h4>Les Buis en Pointe de Diamant</h4>
-          <p>Jardin Renaissance créé sur la cour d'honneur selon les traités de géométrie du XVIIᵉ siècle.</p>
-        </div>
-      </div>
-
-      <!-- Photo 4 -->
-      <div class="gallery-card">
-        <div class="gallery-card-img">
-          <img src="assets/images/flambeaux-lantis.webp" alt="Visite nocturne illuminée aux flambeaux">
-        </div>
-        <div class="gallery-card-caption">
-          <h4>Les Nocturnes aux Flambeaux</h4>
-          <p>Chaque été, des visites nocturnes féeriques permettent d'admirer les vieilles pierres éclairées au feu.</p>
-        </div>
-      </div>
-
-      <!-- Photo 5 -->
-      <div class="gallery-card">
-        <div class="gallery-card-img">
-          <img src="assets/images/facade-jardin-large.jpg" alt="Vue du parc et arboretum participatif">
-        </div>
-        <div class="gallery-card-caption">
-          <h4>Le Parc et l'Arboretum</h4>
-          <p>Un écrin de verdure participatif préservé, abritant des essences d'arbres rares au cœur de la Bouriane.</p>
-        </div>
-      </div>
-
-      <!-- Photo 6 -->
-      <div class="gallery-card">
-        <div class="gallery-card-img">
-          <img src="assets/images/vue-aerienne-lantis.jpg" alt="Vue panoramique en direction de Domme">
-        </div>
-        <div class="gallery-card-caption">
-          <h4>Le Hameau de Lantis</h4>
-          <p>Panorama s'étendant en direction de Domme et de la vallée de la Dordogne toute proche.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== NOUVELLE SECTION : AGENDA CULTUREL & ANIMATIONS 2026 ==================== -->
-  <section class="section-common" id="animations">
-    <div class="section-head-simple">
-      <div>
-        <span>Vie du domaine</span>
-        <h2>Agenda des Animations & Événements 2026</h2>
-      </div>
-      <div>
-        <small style="color:var(--c-muted);">L'ensemble des bénéfices contribue à la conservation du monument</small>
-      </div>
-    </div>
-
-    <div class="agenda-grid">
-      
-      <!-- Événement 1 : Printanières -->
-      <div class="agenda-card">
-        <div class="agenda-date-badge"><i class="fa-regular fa-calendar"></i> 25 Avril 2026</div>
-        <h3>Les Printanières de Lantis</h3>
-        <p class="agenda-desc">
-          Grande journée familiale : chasse aux œufs dans les jardins, théâtre de marionnettes, jeu de l'oie géant et surprises pour les enfants. De 15h à 18h.
-        </p>
-        <div class="agenda-meta">
-          <span>Tarifs : 7 € adulte / 5 € enfant</span>
-          <span>Résa : 06 32 96 00 89</span>
-        </div>
-      </div>
-
-      <!-- Événement 2 : Nocturnes aux chandelles (vedette) -->
-      <div class="agenda-card highlight">
-        <div class="agenda-date-badge"><i class="fa-solid fa-fire"></i> Mardis soir (Juillet & Août)</div>
-        <h3>Visites aux Chandelles & Costumées</h3>
-        <p class="agenda-desc">
-          Tous les mardis d'été à 21h, découvrez les salles seigneuriales plongées dans la pénombre, éclairées à la flamme des bougies et animées en costumes d'époque.
-        </p>
-        <div class="agenda-meta">
-          <span>À 21h00 précises</span>
-          <span>Réservation conseillée</span>
-        </div>
-      </div>
-
-      <!-- Événement 3 : Petit patrimoine -->
-      <div class="agenda-card">
-        <div class="agenda-date-badge"><i class="fa-regular fa-calendar"></i> 27 & 28 Juin 2026</div>
-        <h3>Journées du Petit Patrimoine</h3>
-        <p class="agenda-desc">
-          Mise en valeur des éléments ruraux du domaine : four à pain du XIXᵉ siècle, puits citerne du XVIIIᵉ siècle et ancienne métairie de 1820.
-        </p>
-        <div class="agenda-meta">
-          <span>10h-12h et 14h-18h</span>
-          <span>Accès au domaine</span>
-        </div>
-      </div>
-
-      <!-- Événement 4 : Soirée Théâtre -->
-      <div class="agenda-card">
-        <div class="agenda-date-badge"><i class="fa-regular fa-calendar"></i> Dimanche 12 Juillet 2026</div>
-        <h3>Théâtre : "Au-delà des Montagnes Bleues"</h3>
-        <p class="agenda-desc">
-          Représentation inédite par la troupe itinérante <em>La Passerelle</em> en plein air sur la cour d'honneur du château à 18h.
-        </p>
-        <div class="agenda-meta">
-          <span>20 € / pers. (gratuit &lt;12 ans)</span>
-          <span>Résa au 06 32 96 00 89</span>
-        </div>
-      </div>
-
-      <!-- Événement 5 : Conférence Léo Ferré -->
-      <div class="agenda-card">
-        <div class="agenda-date-badge"><i class="fa-regular fa-calendar"></i> Vendredi 17 Juillet 2026</div>
-        <h3>"Léo Ferré en Quercy"</h3>
-        <p class="agenda-desc">
-          Conférence de Colette Brogniart dans la Salle des Gardes du château à 17h30, retraçant la vie du poète et musicien. Suivie d'un cocktail offert.
-        </p>
-        <div class="agenda-meta">
-          <span>10 € adulte (gratuit étudiants)</span>
-          <span>Salle des Gardes</span>
-        </div>
-      </div>
-
-      <!-- Événement 6 : Récital de piano / Soirée Blanche -->
-      <div class="agenda-card highlight">
-        <div class="agenda-date-badge"><i class="fa-solid fa-music"></i> Vendredi 7 Août 2026</div>
-        <h3>Soirée Blanche & Récital de Piano</h3>
-        <p class="agenda-desc">
-          Concert exceptionnel aux chandelles avec le pianiste Guillaume Wilmot dans la cour d'honneur. Dress code blanc. À 20h.
-        </p>
-        <div class="agenda-meta">
-          <span>50 € adulte / 15 € enfant</span>
-          <span>Avant le 04/08</span>
-        </div>
-      </div>
-
-      <!-- Événement 7 : Journées du Patrimoine -->
-      <div class="agenda-card">
-        <div class="agenda-date-badge"><i class="fa-regular fa-calendar"></i> 19 & 20 Septembre 2026</div>
-        <h3>Journées Européennes du Patrimoine</h3>
-        <p class="agenda-desc">
-          Visites commentées continues des intérieurs, de la chapelle et du parc pour découvrir les étapes clés de la restauration.
-        </p>
-        <div class="agenda-meta">
-          <span>10h-12h et 14h-18h</span>
-          <span>Tarif préférentiel JEP</span>
-        </div>
-      </div>
-
-      <!-- Événement 8 : Poudlentis -->
-      <div class="agenda-card">
-        <div class="agenda-date-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> 25 Octobre 2026</div>
-        <h3>POUDLENTIS : L'Académie des Sorciers</h3>
-        <p class="agenda-desc">
-          Après-midi enchanté pour Halloween : énigmes, sortilèges et grand jeu pour les jeunes sorciers au cœur de la forteresse. De 14h à 18h.
-        </p>
-        <div class="agenda-meta">
-          <span>14h00 à 18h00</span>
-          <span>Familles & enfants</span>
-        </div>
-      </div>
-
-      <!-- Événement 9 : Noëlies -->
-      <div class="agenda-card">
-        <div class="agenda-date-badge"><i class="fa-solid fa-gift"></i> 29 Novembre 2026</div>
-        <h3>Les Noëlies des Petits Lutins</h3>
-        <p class="agenda-desc">
-          Marché artisanal de Noël, illuminations, contes au coin du feu dans la cheminée monumentale et ateliers enfants.
-        </p>
-        <div class="agenda-meta">
-          <span>14h00 à 18h00</span>
-          <span>Entrée libre</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== NOUVELLE SECTION : HÉBERGEMENTS & GÎTES ==================== -->
-  <section class="section-common" id="gites">
-    <div class="section-head-simple">
-      <div>
-        <span>Séjourner au domaine</span>
-        <h2>Gîtes de Caractère & Suite Seigneuriale</h2>
-      </div>
-      <div>
-        <small style="color:var(--c-muted);">Locations labellisées 3 épis au cœur du hameau historique</small>
-      </div>
-    </div>
-
-    <div class="gites-grid">
-      
-      <!-- Gîte 1 : Le charmant gîte -->
-      <div class="gite-card">
-        <div class="gite-icon"><i class="fa-solid fa-house"></i></div>
-        <h3>Le Charmant Gîte</h3>
-        <div class="gite-capacity">Capacité : 4 personnes</div>
-        <p class="gite-desc">
-          Aménagé dans l'ancienne forge et l'ancienne boulangerie du château avec son authentique four à pain conservé. Deux chambres confortables, salon chaleureux et terrasse privative.
-        </p>
-        <div class="gite-contact">
-          Disponible sur Airbnb ou en réservation directe au 06 32 96 00 89
-        </div>
-      </div>
-
-      <!-- Gîte 2 : La Huchette -->
-      <div class="gite-card">
-        <div class="gite-icon"><i class="fa-solid fa-wheat-awn"></i></div>
-        <h3>La Huchette</h3>
-        <div class="gite-capacity">Capacité : 4 à 6 personnes</div>
-        <p class="gite-desc">
-          Niché dans l'ancienne métairie du domaine datant de 1820. Belles poutres apparentes, grand espace de vie lumineux, cuisine équipée et vue apaisante sur les collines du Quercy.
-        </p>
-        <div class="gite-contact">
-          Idéal pour les séjours en famille ou petits groupes d'amis
-        </div>
-      </div>
-
-      <!-- Gîte 3 : Suite seigneuriale -->
-      <div class="gite-card">
-        <div class="gite-icon"><i class="fa-solid fa-crown"></i></div>
-        <h3>La Suite Seigneuriale</h3>
-        <div class="gite-capacity">Capacité : 2 à 3 personnes</div>
-        <p class="gite-desc">
-          Une expérience hors du temps au sein même du château : mobilier d'époque restauré, cheminée ancienne, salle d'eau privative et atmosphère feutrée d'une chambre noble du XVIIᵉ siècle.
-        </p>
-        <div class="gite-contact">
-          Parfait pour les nuits de noces et escapades en amoureux
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== MARIAGES & RÉCEPTIONS ==================== -->
-  <section class="section-common" id="mariages">
-    <div class="reception-split-card">
-      <div class="reception-photo">
-        <img src="assets/images/flambeaux-lantis.webp" alt="Ambiance féerique de réception au château">
-      </div>
-
-      <div class="reception-info">
-        <span style="font-size:0.85rem;color:var(--c-stone-gold);text-transform:uppercase;font-weight:600;letter-spacing:0.05em;display:block;margin-bottom:0.4rem;">Privatisation du domaine</span>
-        <h2>Mariages, réceptions et séminaires</h2>
-        <p style="font-size:1.02rem;line-height:1.65;color:var(--c-muted);">
-          Le Château de Lantis met ses espaces intérieurs et extérieurs à votre disposition pour vos célébrations familiales et événements d'entreprise, dans un cadre historique intime et authentique.
-        </p>
-
-        <ul class="reception-features-list">
-          <li><i class="fa-solid fa-check"></i> <strong>Capacité :</strong> Jusqu'à 150 personnes en cocktail ou dîner assis.</li>
-          <li><i class="fa-solid fa-check"></i> <strong>Liberté complète :</strong> Libre choix de votre traiteur et de vos prestataires, sans droit de bouchon.</li>
-          <li><i class="fa-solid fa-check"></i> <strong>Hébergements sur place :</strong> Gîtes de charme et chambres pour vos proches dans le hameau.</li>
-          <li><i class="fa-solid fa-check"></i> <strong>Mise en lumière :</strong> Possibilité d'éclairage aux flambeaux de la cour d'honneur pour la soirée.</li>
-        </ul>
-
+    <!-- 2. HISTOIRE DÉTAILLÉE & FRISÉ HISTORIQUE -->
+    <section class="page-section" id="histoire">
+      <div class="section-title-bar">
         <div>
-          <a href="mailto:chateaudelantis@gmail.com?subject=Demande%20de%20devis%20Mariage%20au%20Ch%C3%A2teau%20de%20Lantis" class="btn-primary">
-            <i class="fa-regular fa-envelope"></i> Demander une brochure et les disponibilités
-          </a>
+          <span class="section-kicker">Chronologie & Patrimoine</span>
+          <h2 class="section-main-heading">1460–2026 : Cinq siècles d'histoire et 40 ans de fouilles</h2>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ==================== HORAIRES ET TARIFS DES VISITES ==================== -->
-  <section class="section-common" id="visites">
-    <div class="section-head-simple">
-      <div>
-        <span>Préparer votre venue</span>
-        <h2>Horaires d'ouverture & Tarifs 2026</h2>
-      </div>
-      <div>
-        <a href="tel:0565411147" style="color:var(--c-boxwood);font-weight:600;"><i class="fa-solid fa-phone"></i> 05.65.41.11.47</a>
-      </div>
-    </div>
+      <div class="content-panel">
+        <div class="history-narrative-split">
+          <div class="history-text-col">
+            <h3 class="panel-subtitle">De la forteresse frontalière au dépotoir communal</h3>
+            <p>
+              Mentionné dans les archives du Lot dès 1460, le Château de Lantis constituait un point d'appui défensif stratégique au sortir de la guerre de Cent Ans. Construit avec des murs épais, une salle des gardes et un cul de basse fosse, le logis est transformé vers 1625 en élégante résidence Renaissance dotée de fenêtres à meneaux et d'un dallage en escarboucle (en étoile) considéré comme exceptionnel par les historiens d'art.
+            </p>
+            <p>
+              Après la Révolution française, le domaine est progressivement abandonné. Durant plus d'un siècle, ses pierres sont pillées et les ruines sont utilisées comme dépotoir communal, jusqu'à disparaître totalement sous plusieurs mètres de gravats et une végétation impénétrable.
+            </p>
 
-    <div class="visits-columns">
-      
-      <!-- Périodes d'ouverture -->
-      <div class="info-box">
-        <h3 class="info-box-title"><i class="fa-regular fa-calendar-days" style="color:var(--c-boxwood);"></i> Calendrier des visites</h3>
+            <h3 class="panel-subtitle" style="margin-top:1.8rem;">1993 : Le miracle des fondations retrouvées</h3>
+            <p>
+              Au début des années 1990, <strong>Françoise et Michel Barbier-Damiette</strong> découvrent les premiers vestiges en creusant sur leur propriété. Commence alors une aventure humaine hors du commun : quarante années de déblaiement manuel, de remontage de voûtes effondrées, de taille de pierre et de replantation des jardins de buis en pointe de diamant. Le château est aujourd'hui classé Monument Historique et labellisé par les Vieilles Maisons Françaises (VMF).
+            </p>
+          </div>
+
+          <div class="history-imagery-col">
+            <div class="framed-document">
+              <img src="assets/images/gravure-lantis.jpg" alt="Gravure ancienne de Lantis">
+              <div class="doc-caption">Dessin d'archives représentant la forteresse avant la Révolution.</div>
+            </div>
+            <div class="framed-document">
+              <img src="assets/images/vue-aerienne-lantis.jpg" alt="Vue aérienne du domaine">
+              <div class="doc-caption">Vue aérienne panoramique montrant le château restauré et les collines de Dégagnac.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. GALERIE PHOTOGRAPHIQUE OFFICIELLE -->
+    <section class="page-section" id="galerie">
+      <div class="section-title-bar">
+        <div>
+          <span class="section-kicker">Visite visuelle</span>
+          <h2 class="section-main-heading">Galerie photographique du domaine</h2>
+        </div>
+      </div>
+
+      <div class="visual-catalogue-grid">
         
-        <div class="hours-table">
-          <div class="hours-item">
-            <div>
-              <strong>Haute Saison (Juillet et Août)</strong><br>
-              <span>Visites tous les jours</span>
-            </div>
-            <span>10h00–12h00 & 14h00–18h00</span>
+        <div class="catalogue-item">
+          <div class="catalogue-thumb">
+            <img src="assets/images/facade-lantis.webp" alt="Façade Renaissance sous le soleil">
           </div>
+          <div class="catalogue-meta">
+            <strong>Le Logis du XVᵉ siècle</strong>
+            <span>Pierres calcaires dorées du Quercy et toitures d'ardoise</span>
+          </div>
+        </div>
 
-          <div class="hours-item">
-            <div>
-              <strong>Avril, Mai, Juin et Septembre</strong><br>
-              <span>Tous les jours sauf le mardi</span>
-            </div>
-            <span>14h00 à 18h00</span>
+        <div class="catalogue-item">
+          <div class="catalogue-thumb">
+            <img src="assets/images/cour-honneur-lantis.jpg" alt="Cour d'honneur pavée">
           </div>
+          <div class="catalogue-meta">
+            <strong>La Cour d'Honneur</strong>
+            <span>Cour pavée centrale menant aux salles d'apparat</span>
+          </div>
+        </div>
 
-          <div class="hours-item">
-            <div>
-              <strong>Groupes et scolaires (dès 10 personnes)</strong><br>
-              <span>Visites guidées en français ou anglais</span>
-            </div>
-            <span>Toute l'année sur RDV</span>
+        <div class="catalogue-item">
+          <div class="catalogue-thumb">
+            <img src="assets/images/jardin-lantis.webp" alt="Parterres de buis taillés en pointe de diamant">
           </div>
+          <div class="catalogue-meta">
+            <strong>Le Jardin Renaissance</strong>
+            <span>Buis taillés en pointe de diamant selon les traités du XVIIᵉ</span>
+          </div>
+        </div>
 
-          <div class="hours-item">
-            <div>
-              <strong>Nocturnes aux chandelles</strong><br>
-              <span>Mardis soir d'été (juillet et août)</span>
-            </div>
-            <span>À 21h00 sur inscription</span>
+        <div class="catalogue-item">
+          <div class="catalogue-thumb">
+            <img src="assets/images/flambeaux-lantis.webp" alt="Nocturne aux flambeaux et chandelles">
           </div>
+          <div class="catalogue-meta">
+            <strong>Nocturnes aux Chandelles</strong>
+            <span>Visites théâtralisées d'été illuminées à la flamme</span>
+          </div>
+        </div>
+
+        <div class="catalogue-item">
+          <div class="catalogue-thumb">
+            <img src="assets/images/facade-jardin-large.jpg" alt="Parc paysager et arboretum participatif">
+          </div>
+          <div class="catalogue-meta">
+            <strong>L'Arboretum Participatif</strong>
+            <span>Parc naturel préservé abritant des essences végétales rares</span>
+          </div>
+        </div>
+
+        <div class="catalogue-item">
+          <div class="catalogue-thumb">
+            <img src="assets/images/vue-aerienne-lantis.jpg" alt="Panorama vers Domme et Dordogne">
+          </div>
+          <div class="catalogue-meta">
+            <strong>Le Hameau de Lantis</strong>
+            <span>Vue panoramique en direction de la vallée de la Dordogne</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. AGENDA CULTUREL 2026 COMPLET -->
+    <section class="page-section" id="agenda">
+      <div class="section-title-bar">
+        <div>
+          <span class="section-kicker">Programmation Annuelle</span>
+          <h2 class="section-main-heading">Agenda & Animations de la Saison 2026</h2>
+        </div>
+        <div class="header-note">
+          Les bénéfices des événements contribuent directement à la sauvegarde du monument.
         </div>
       </div>
 
-      <!-- Grille des tarifs -->
-      <div class="info-box">
-        <h3 class="info-box-title"><i class="fa-solid fa-ticket" style="color:var(--c-stone-gold);"></i> Tarifs individuels & groupes</h3>
+      <div class="agenda-dossier-list">
         
-        <div class="pricing-table">
-          <div class="price-line">
-            <div>
-              <strong>Plein tarif adulte</strong><br>
-              <small style="color:var(--c-muted);">Visite guidée complète des intérieurs et du parc (durée 1h)</small>
-            </div>
-            <div class="price-sum">10,00 €</div>
+        <!-- Événement 1 -->
+        <div class="dossier-row">
+          <div class="dossier-date">
+            <span class="d-day">25</span>
+            <span class="d-month">AVRIL 2026</span>
           </div>
+          <div class="dossier-body">
+            <span class="dossier-tag">Journée Famille & Enfants</span>
+            <h4 class="dossier-title">Les Printanières de Lantis</h4>
+            <p class="dossier-summary">
+              Chasse aux œufs géante dans les jardins Renaissance, théâtre de marionnettes traditionnel, jeu de l'oie grandeur nature et récompenses pour tous les enfants. De 15h à 18h.
+            </p>
+          </div>
+          <div class="dossier-action">
+            <span class="dossier-price">7 € adulte / 5 € enfant</span>
+            <span class="dossier-contact">Résa : 06 32 96 00 89</span>
+          </div>
+        </div>
 
-          <div class="price-line">
-            <div>
-              <strong>Tarif réduit</strong><br>
-              <small style="color:var(--c-muted);">Jeunes de 12 à 18 ans et étudiants</small>
-            </div>
-            <div class="price-sum">8,00 €</div>
+        <!-- Événement 2 : Les mardis d'été -->
+        <div class="dossier-row highlight-dossier">
+          <div class="dossier-date">
+            <span class="d-day">MARDIS</span>
+            <span class="d-month">JUILLET & AOÛT</span>
           </div>
+          <div class="dossier-body">
+            <span class="dossier-tag gold-tag">Grand Rendez-Vous de l'Été</span>
+            <h4 class="dossier-title">Visites Costumées aux Chandelles (21h00)</h4>
+            <p class="dossier-summary">
+              Chaque mardi soir à la tombée de la nuit, explorez la forteresse entièrement éclairée à la lueur des bougies et animée par les propriétaires en costumes d'époque. Une immersion féerique inoubliable pour petits et grands.
+            </p>
+          </div>
+          <div class="dossier-action">
+            <span class="dossier-price">Départ à 21h00</span>
+            <span class="dossier-contact">Réservation conseillée</span>
+          </div>
+        </div>
 
-          <div class="price-line">
-            <div>
-              <strong>Enfants de moins de 12 ans</strong><br>
-              <small style="color:var(--c-muted);">Accompagnés d'un adulte</small>
-            </div>
-            <div class="price-sum" style="color:var(--c-boxwood);">Gratuit</div>
+        <!-- Événement 3 -->
+        <div class="dossier-row">
+          <div class="dossier-date">
+            <span class="d-day">27–28</span>
+            <span class="d-month">JUIN 2026</span>
           </div>
+          <div class="dossier-body">
+            <span class="dossier-tag">Patrimoine Rural</span>
+            <h4 class="dossier-title">Journées du Petit Patrimoine de Pays</h4>
+            <p class="dossier-summary">
+              Découverte des éléments agricoles et vernaculaires restaurés du domaine : le four à pain du XIXᵉ siècle, le puits citerne du XVIIIᵉ siècle et le corps de ferme de 1820.
+            </p>
+          </div>
+          <div class="dossier-action">
+            <span class="dossier-price">10h-12h & 14h-18h</span>
+            <span class="dossier-contact">Visite libre & guidée</span>
+          </div>
+        </div>
 
-          <div class="price-line">
-            <div>
-              <strong>Tarif groupe (à partir de 10 personnes)</strong><br>
-              <small style="color:var(--c-muted);">Accueil personnalisé par les propriétaires</small>
-            </div>
-            <div class="price-sum">8,00 € <span style="font-size:0.8rem;color:var(--c-muted);font-family:var(--font-sans);">/ pers.</span></div>
+        <!-- Événement 4 -->
+        <div class="dossier-row">
+          <div class="dossier-date">
+            <span class="d-day">12</span>
+            <span class="d-month">JUILLET 2026</span>
           </div>
+          <div class="dossier-body">
+            <span class="dossier-tag">Spectacle Vivant</span>
+            <h4 class="dossier-title">Théâtre en Plein Air : « Au-delà des Montagnes Bleues »</h4>
+            <p class="dossier-summary">
+              Représentation théâtrale inédite par la troupe itinérante <em>La Passerelle</em>, donnée dans le décor naturel et les pierres de la cour d'honneur du château à 18h00.
+            </p>
+          </div>
+          <div class="dossier-action">
+            <span class="dossier-price">20 € (gratuit &lt;12 ans)</span>
+            <span class="dossier-contact">Résa : 06 32 96 00 89</span>
+          </div>
+        </div>
+
+        <!-- Événement 5 -->
+        <div class="dossier-row">
+          <div class="dossier-date">
+            <span class="d-day">17</span>
+            <span class="d-month">JUILLET 2026</span>
+          </div>
+          <div class="dossier-body">
+            <span class="dossier-tag">Conférence Culturelle</span>
+            <h4 class="dossier-title">« Léo Ferré en Quercy » par Colette Brogniart</h4>
+            <p class="dossier-summary">
+              Évocation littéraire et musicale du séjour quercynois de Léo Ferré dans la Salle des Gardes du château à 17h30, suivie d'un cocktail offert aux participants.
+            </p>
+          </div>
+          <div class="dossier-action">
+            <span class="dossier-price">10 € (étudiants gratuit)</span>
+            <span class="dossier-contact">Cocktail inclus</span>
+          </div>
+        </div>
+
+        <!-- Événement 6 -->
+        <div class="dossier-row highlight-dossier">
+          <div class="dossier-date">
+            <span class="d-day">7</span>
+            <span class="d-month">AOÛT 2026</span>
+          </div>
+          <div class="dossier-body">
+            <span class="dossier-tag gold-tag">Concert d'Exception</span>
+            <h4 class="dossier-title">Soirée Blanche & Récital de Piano aux Chandelles</h4>
+            <p class="dossier-summary">
+              Récital du pianiste Guillaume Wilmot dans la cour d'honneur sous les étoiles. Tenue blanche recommandée. Début à 20h00 précises.
+            </p>
+          </div>
+          <div class="dossier-action">
+            <span class="dossier-price">50 € adulte / 15 € enfant</span>
+            <span class="dossier-contact">Avant le 4 août</span>
+          </div>
+        </div>
+
+        <!-- Événement 7 & 8 -->
+        <div class="dossier-row">
+          <div class="dossier-date">
+            <span class="d-day">25</span>
+            <span class="d-month">OCTOBRE 2026</span>
+          </div>
+          <div class="dossier-body">
+            <span class="dossier-tag">Fête & Mystère</span>
+            <h4 class="dossier-title">POUDLENTIS : L'Académie des Jeunes Sorciers</h4>
+            <p class="dossier-summary">
+              Après-midi festif d'Halloween de 14h à 18h avec ateliers magiques, énigmes dans les souterrains et grand jeu médiéval pour les enfants costumés.
+            </p>
+          </div>
+          <div class="dossier-action">
+            <span class="dossier-price">14h00 à 18h00</span>
+            <span class="dossier-contact">Ouvert à tous</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. HÉBERGEMENTS & GÎTES DE CARACTÈRE -->
+    <section class="page-section" id="gites">
+      <div class="section-title-bar">
+        <div>
+          <span class="section-kicker">Séjours Patrimoniaux</span>
+          <h2 class="section-main-heading">Les 3 hébergements labellisés du domaine</h2>
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="lodging-tri-grid">
+        
+        <div class="lodging-card">
+          <div class="lodging-header-tag">Ancienne boulangerie & forge</div>
+          <h3 class="lodging-name">Le Charmant Gîte</h3>
+          <span class="lodging-cap">Capacité : 4 personnes • 3 épis</span>
+          <p class="lodging-summary">
+            Aménagé dans l'ancienne boulangerie avec son authentique four à pain et la forge du château. Deux chambres douillettes, salon avec poêle, cuisine complète et cour privative ombragée.
+          </p>
+          <div class="lodging-footer">
+            <span>Disponible sur Airbnb ou en direct</span>
+            <a href="tel:0632960089" class="btn-micro">Réserver au 06 32 96 00 89</a>
+          </div>
+        </div>
 
-  <!-- ==================== NOUVELLE SECTION : MÉCÉNAT & AUTOUR DU CHÂTEAU ==================== -->
-  <section class="section-common" id="patrimoine">
-    <div class="heritage-duo-grid">
-      
-      <!-- Bloc 1 : Mécénat Dartagnans -->
-      <div class="heritage-card">
-        <span style="font-size:0.85rem;color:var(--c-stone-gold);text-transform:uppercase;font-weight:600;letter-spacing:0.05em;display:block;margin-bottom:0.4rem;">Sauvegarde du patrimoine</span>
-        <h3>Devenir mécène du Château de Lantis</h3>
-        <p style="color:var(--c-muted);margin-bottom:1.2rem;line-height:1.65;">
-          Prenez part à l'extraordinaire aventure de la restauration en devenant acteur de la préservation de ce patrimoine unique. Grâce au soutien participatif (notamment via la plateforme Dartagnans), nous avons pu recréer les jardins de buis historiques sur la cour d'honneur.
-        </p>
-        <p style="font-size:0.92rem;color:var(--c-muted);margin-bottom:1.5rem;">
-          Chaque contribution permet de financer de nouveaux chantiers de taille de pierre, de réfection de toitures et d'entretien de l'arboretum.
-        </p>
-        <a href="mailto:chateaudelantis@gmail.com?subject=Renseignements%20M%C3%A9c%C3%A9nat%20Ch%C3%A2teau%20de%20Lantis" class="btn-primary">
-          <i class="fa-solid fa-heart"></i> Participer au mécénat
-        </a>
+        <div class="lodging-card">
+          <div class="lodging-header-tag">Métairie de 1820</div>
+          <h3 class="lodging-name">La Huchette</h3>
+          <span class="lodging-cap">Capacité : 4 à 6 personnes • 3 épis</span>
+          <p class="lodging-summary">
+            Situé dans l'ancien corps de ferme du domaine. Grand volume chaleureux avec poutres quercynoises apparentes, salon spacieux, cuisine équipée et vue dégagée sur les prés et les bois.
+          </p>
+          <div class="lodging-footer">
+            <span>Idéal pour les séjours en famille</span>
+            <a href="tel:0632960089" class="btn-micro">Renseignements</a>
+          </div>
+        </div>
+
+        <div class="lodging-card special-suite">
+          <div class="lodging-header-tag gold-tag">Au sein même du château</div>
+          <h3 class="lodging-name">La Suite Seigneuriale</h3>
+          <span class="lodging-cap">Capacité : 2 à 3 personnes</span>
+          <p class="lodging-summary">
+            Dormez dans la forteresse : chambre noble meublée avec cheminée en pierre d'époque, lit à baldaquin, salle d'eau privative et vue sur la cour d'honneur.
+          </p>
+          <div class="lodging-footer">
+            <span>Nuits de noces & escapades romantiques</span>
+            <a href="tel:0632960089" class="btn-micro">Disponibilités</a>
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <!-- Bloc 2 : Autour de Lantis (Bouriane & Périgord) -->
-      <div class="heritage-card">
-        <span style="font-size:0.85rem;color:var(--c-boxwood);text-transform:uppercase;font-weight:600;letter-spacing:0.05em;display:block;margin-bottom:0.4rem;">Découvrir la région</span>
-        <h3>À voir autour du château</h3>
-        <p style="color:var(--c-muted);margin-bottom:0.8rem;line-height:1.6;">
-          Prolongez votre journée en découvrant les merveilles naturelles et historiques de la Bouriane :
-        </p>
-        <ul class="surrounding-list">
-          <li>
-            <i class="fa-solid fa-person-walking"></i>
-            <div><strong>Balades à pied :</strong> L'ancien prieuré du XIIIᵉ s. de Lantis, la résurgence de la Croze et le ruisseau du rieu de Lantis.</div>
-          </li>
-          <li>
-            <i class="fa-solid fa-car"></i>
-            <div><strong>À moins de 10 km :</strong> Les grottes préhistoriques de Cougnac à Gourdon, l'Abbaye Nouvelle de Léobard (XIIIᵉ s.) et le Jardin Bourian de Dégagnac.</div>
-          </li>
-          <li>
-            <i class="fa-solid fa-mountain-sun"></i>
-            <div><strong>À 35 km :</strong> Les sites majeurs classés UNESCO : Sarlat-la-Canéda, Cahors et la cité de Rocamadour.</div>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== CONTACT ET ACCÈS ==================== -->
-  <section class="section-common" id="contact">
-    <div class="section-head-simple">
-      <div>
-        <span>Informations pratiques</span>
-        <h2>Accès et coordonnées directes</h2>
-      </div>
-    </div>
-
-    <div class="contact-deck">
-      
-      <div class="contact-card-item">
-        <h3 style="font-size:1.35rem;margin-bottom:0.8rem;"><i class="fa-solid fa-location-dot" style="color:var(--c-stone-gold);margin-right:0.5rem;"></i> Accès au monument</h3>
-        <p style="margin-bottom:1.2rem;line-height:1.7;">
-          <strong>Château de Lantis</strong><br>
-          Hameau de Lantis, 46340 Dégagnac (Lot, Occitanie)<br>
-          <em>Situé à 25 minutes de Sarlat-la-Canéda et de Gourdon</em>
-        </p>
-        <p style="font-size:0.92rem;color:var(--c-muted);">
-          Parking gratuit à disposition pour voitures et autocars de tourisme.<br>
-          Accès aménagé pour les personnes à mobilité réduite sur le rez-de-chaussée et les jardins.
-        </p>
-      </div>
-
-      <div class="contact-card-item">
-        <h3 style="font-size:1.35rem;margin-bottom:0.8rem;"><i class="fa-solid fa-phone" style="color:var(--c-boxwood);margin-right:0.5rem;"></i> Joindre les propriétaires</h3>
-        <p style="font-size:0.95rem;margin-bottom:0.4rem;">Pour toute question sur les visites, mariages, gîtes ou mécénat :</p>
-        <a href="tel:0632960089" class="contact-phone-direct">06 32 96 00 89</a>
-        <br>
-        <span style="color:var(--c-muted);font-size:0.92rem;">Téléphone fixe du château : 05 65 41 11 47</span>
-        <div style="margin-top:1.2rem;">
-          <a href="mailto:chateaudelantis@gmail.com" class="btn-primary">
-            <i class="fa-solid fa-envelope"></i> chateaudelantis@gmail.com
-          </a>
+    <!-- 6. HORAIRES DES VISITES & GRILLE DES TARIFS -->
+    <section class="page-section" id="visites">
+      <div class="section-title-bar">
+        <div>
+          <span class="section-kicker">Accueil du Public</span>
+          <h2 class="section-main-heading">Modalités de visite & Tarifs 2026</h2>
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="visit-table-layout">
+        
+        <div class="visit-panel">
+          <h3 class="panel-subtitle"><i class="fa-regular fa-calendar"></i> Calendrier d'ouverture</h3>
+          <table class="data-table">
+            <tbody>
+              <tr>
+                <td><strong>Juillet & Août (Haute Saison)</strong><br><small>Ouvert tous les jours</small></td>
+                <td class="table-right">10h00 à 12h00<br>14h00 à 18h00</td>
+              </tr>
+              <tr>
+                <td><strong>Avril, Mai, Juin, Septembre</strong><br><small>Tous les jours sauf le mardi</small></td>
+                <td class="table-right">14h00 à 18h00</td>
+              </tr>
+              <tr>
+                <td><strong>Groupes & Scolaires (dès 10 pers.)</strong><br><small>En français ou en anglais</small></td>
+                <td class="table-right">Toute l'année sur RDV</td>
+              </tr>
+              <tr>
+                <td><strong>Nocturnes aux Chandelles</strong><br><small>Mardis soirs d'été</small></td>
+                <td class="table-right">À 21h00 précises</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-  <!-- Pied de page officiel -->
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div>
-        <strong>Château de Lantis</strong> — Dégagnac (46340) • Monument Historique privé du Lot • Label V.M.F. depuis 1993
+        <div class="visit-panel">
+          <h3 class="panel-subtitle"><i class="fa-solid fa-receipt"></i> Grille tarifaire officielle</h3>
+          <table class="data-table">
+            <tbody>
+              <tr>
+                <td><strong>Plein Tarif Adulte</strong><br><small>Visite guidée des intérieurs et du parc (1h)</small></td>
+                <td class="table-right price-tag">10,00 €</td>
+              </tr>
+              <tr>
+                <td><strong>Tarif Réduit</strong><br><small>12 à 18 ans et étudiants sur justificatif</small></td>
+                <td class="table-right price-tag">8,00 €</td>
+              </tr>
+              <tr>
+                <td><strong>Enfants de moins de 12 ans</strong><br><small>Accompagnés d'un adulte</small></td>
+                <td class="table-right free-tag">Gratuit</td>
+              </tr>
+              <tr>
+                <td><strong>Groupes (à partir de 10 pers.)</strong><br><small>Accueil personnalisé par les propriétaires</small></td>
+                <td class="table-right price-tag">8,00 € / pers.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
-      <div>
-        Projet de démonstration pour la valorisation du patrimoine
+    </section>
+
+    <!-- 7. MARIAGES & RÉCEPTIONS -->
+    <section class="page-section" id="receptions">
+      <div class="section-title-bar">
+        <div>
+          <span class="section-kicker">Événements Privés</span>
+          <h2 class="section-main-heading">Mariages, réceptions et séminaires</h2>
+        </div>
       </div>
-    </div>
-  </footer>
+
+      <div class="content-panel reception-banner-box">
+        <div class="reception-inner-text">
+          <h3 class="reception-title-box">Privatisez le Château de Lantis pour vos plus beaux moments</h3>
+          <p>
+            Offrez à vos invités un cadre patrimonial exclusif et authentique : cour d'honneur illuminée aux flambeaux, jardins Renaissance pour vos cocktails et vins d'honneur, et liberté complète de choix de traiteur sans droit de bouchon.
+          </p>
+
+          <div class="bullets-columns">
+            <div class="bullet-entry"><i class="fa-solid fa-check"></i> <strong>Capacité :</strong> Jusqu'à 150 convives assis</div>
+            <div class="bullet-entry"><i class="fa-solid fa-check"></i> <strong>Exclusivité :</strong> Tout le domaine réservé pour votre week-end</div>
+            <div class="bullet-entry"><i class="fa-solid fa-check"></i> <strong>Liberté totale :</strong> Aucun prestataire imposé</div>
+            <div class="bullet-entry"><i class="fa-solid fa-check"></i> <strong>Hébergements :</strong> Gîtes et suite sur place</div>
+          </div>
+
+          <div class="reception-cta-strip">
+            <a href="mailto:chateaudelantis@gmail.com?subject=Demande%20de%20devis%20Mariage%20au%20Ch%C3%A2teau%20de%20Lantis" class="btn-solid-primary">
+              <i class="fa-regular fa-envelope"></i> Demander la brochure mariage & disponibilités
+            </a>
+            <span class="direct-phone-mention">ou contactez directement les propriétaires au <strong>06 32 96 00 89</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. MÉCÉNAT & AUTOUR DU CHÂTEAU -->
+    <section class="page-section" id="mecenat">
+      <div class="section-title-bar">
+        <div>
+          <span class="section-kicker">Engagement & Région</span>
+          <h2 class="section-main-heading">Mécénat patrimonial et sites remarquables à proximité</h2>
+        </div>
+      </div>
+
+      <div class="dual-feature-layout">
+        
+        <div class="feature-box">
+          <div class="feature-tag">Sauvegarde Dartagnans</div>
+          <h3 class="panel-subtitle">Soutenir la restauration du monument</h3>
+          <p>
+            Participez activement aux chantiers de conservation du château en devenant mécène. Notre campagne avec la plateforme Dartagnans a déjà permis de recréer les jardins de buis en pointe de diamant de la cour d'honneur.
+          </p>
+          <p style="margin-top:0.8rem;font-size:0.92rem;color:var(--c-muted);">
+            Les prochains projets concernent la réhabilitation de parties hautes de la forteresse et l'enrichissement de l'arboretum d'arbres rares.
+          </p>
+          <div style="margin-top:1.4rem;">
+            <a href="mailto:chateaudelantis@gmail.com?subject=Renseignements%20M%C3%A9c%C3%A9nat%20Ch%C3%A2teau%20de%20Lantis" class="btn-inline-link">
+              Prendre contact pour le mécénat &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-tag">Aux Alentours</div>
+          <h3 class="panel-subtitle">À découvrir dans la région</h3>
+          <ul class="surroundings-bullets">
+            <li><strong>À pied depuis le château :</strong> Hameau historique de Lantis, résurgence de la Croze et sentiers ombragés du rieu de Lantis.</li>
+            <li><strong>À moins de 10 km :</strong> Grottes préhistoriques de Cougnac à Gourdon, Abbaye Nouvelle de Léobard (XIIIᵉ s.) et Jardin Bourian de Dégagnac.</li>
+            <li><strong>À 35 km :</strong> Les trésors classés UNESCO : Sarlat-la-Canéda, Cahors et la cité de Rocamadour.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. CONTACT ET ITINÉRAIRE -->
+    <section class="page-section" id="contact">
+      <div class="section-title-bar">
+        <div>
+          <span class="section-kicker">Venir au Château</span>
+          <h2 class="section-main-heading">Accès routier et coordonnées directes</h2>
+        </div>
+      </div>
+
+      <div class="contact-dossier-card">
+        <div class="contact-split">
+          
+          <div class="contact-text-block">
+            <h3 class="panel-subtitle">Château de Lantis</h3>
+            <p>
+              Hameau de Lantis<br>
+              46340 Dégagnac (Lot, Occitanie)<br>
+              <em>À 25 minutes de Sarlat-la-Canéda et de Gourdon</em>
+            </p>
+            <div class="parking-info-pill">
+              <i class="fa-solid fa-square-parking"></i> Parking gratuit aménagé pour voitures et autocars sur place
+            </div>
+            <p style="font-size:0.88rem;color:var(--c-muted);margin-top:1rem;">
+              Accessibilité : rez-de-chaussée et jardins accessibles aux personnes à mobilité réduite.
+            </p>
+          </div>
+
+          <div class="contact-actions-block">
+            <div class="contact-line">
+              <span class="c-label">Téléphone portable :</span>
+              <a href="tel:0632960089" class="c-big-phone">06 32 96 00 89</a>
+            </div>
+            <div class="contact-line">
+              <span class="c-label">Téléphone fixe :</span>
+              <span class="c-val">05 65 41 11 47</span>
+            </div>
+            <div class="contact-line">
+              <span class="c-label">Messagerie électronique :</span>
+              <a href="mailto:chateaudelantis@gmail.com" class="c-val" style="color:var(--c-stone-gold);">chateaudelantis@gmail.com</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER OFFICIEL -->
+    <footer class="estate-footer">
+      <div class="footer-split">
+        <div>
+          <strong>Château de Lantis</strong> — Dégagnac (Lot) • Monument Historique privé • Label V.M.F. depuis 1993
+        </div>
+        <div>
+          Site de présentation et de valorisation du patrimoine quercynois
+        </div>
+      </div>
+    </footer>
+
+  </main>
 
 </body>
 </html>

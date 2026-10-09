@@ -1,33 +1,33 @@
 /* ==========================================================================
-   CHÂTEAU DE LANTIS (Quercy • Lot)
-   Design Authentique, Naturel & Ultra Documenté
-   Palette minérale : Blanc chaud lin, pierre ocre du Lot, vert buis forêt
+   CHÂTEAU DE LANTIS - TEMPLATE DOSSIER DE DOMAINE AVEC SIDEBAR FIXE
+   Structure architecturale radicalement différente de Roquetaillade :
+   - Mise en page bi-colonne (Sidebar latérale gauche + Grand flux de lecture droite)
+   - Typographie d'institution historique : Libre Baskerville & Source Sans 3
+   - Palette authentique du Quercy : Pierre dorée, blanc calcaire et vert buis
    ========================================================================== */
 
 :root {
-  --font-serif: 'EB Garamond', Georgia, serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Libre Baskerville', Georgia, serif;
+  --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  /* Teintes minérales authentiques */
-  --c-bg:            #FBF9F6;     /* Lin clair naturel */
-  --c-surface:       #FFFFFF;     /* Blanc pur */
-  --c-subtle:        #F4EFEA;     /* Pierre calcaire douce */
-  --c-border:        #E2D9CC;     /* Filets pierre discrets */
-  --c-border-light:  #ECE5DB;
+  /* Teintes de pierre naturelle du Quercy */
+  --c-body-bg:       #F7F4EF;     /* Fond lin pierre douce */
+  --c-sidebar-bg:    #FFFFFF;     /* Sidebar blanc crème */
+  --c-card-bg:       #FFFFFF;
+  --c-subtle-bg:     #F0EAE1;     /* Pierre calcaire chaude */
 
-  --c-text:          #2A2723;     /* Anthracite minéral */
-  --c-muted:         #67625A;     /* Brun-gris pierre */
+  --c-border:        #E2D8CA;     /* Lignes fines et sobres */
+  --c-border-light:  #ECE3D6;
 
-  --c-stone-gold:    #9A6432;     /* Ocre chaud du Quercy */
-  --c-stone-light:   #F5ECE1;
-  --c-boxwood:       #314730;     /* Vert buis naturel */
+  --c-text:          #24211D;     /* Anthracite chaud noble */
+  --c-muted:         #68635B;     /* Texte secondaire posé */
+
+  --c-gold:          #9E6634;     /* Ocre doré de la pierre de Dégagnac */
+  --c-gold-light:    #F6EDE3;
+  --c-boxwood:       #314730;     /* Vert buis forêt */
   --c-boxwood-light: #EEF3ED;
 
-  --shadow-subtle: 0 4px 20px rgba(42, 39, 35, 0.05);
-  --shadow-card:   0 8px 30px rgba(42, 39, 35, 0.07);
-
-  --radius-sm: 4px;
-  --radius: 8px;
+  --sidebar-w:       320px;
 }
 
 *, *::before, *::after {
@@ -39,24 +39,24 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  background-color: var(--c-bg);
+  background-color: var(--c-body-bg);
   color: var(--c-text);
 }
 
-body {
+body.estate-layout {
   font-family: var(--font-sans);
   line-height: 1.65;
-  background-color: var(--c-bg);
+  background-color: var(--c-body-bg);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  font-size: 1rem;
+  display: flex;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
   color: var(--c-text);
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
 p {
@@ -75,669 +75,740 @@ img {
   display: block;
 }
 
-/* ==================== BANDEAU D'EN-TÊTE ==================== */
-.top-notice {
-  background: var(--c-stone-light);
-  border-bottom: 1px solid var(--c-border);
-  padding: 0.55rem 1.5rem;
-  font-size: 0.85rem;
-  color: var(--c-stone-gold);
-}
-
-.top-notice-inner {
-  max-width: 1240px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.notice-phone {
-  color: var(--c-text);
-  font-weight: 600;
-}
-.notice-phone:hover {
-  color: var(--c-stone-gold);
-}
-
-/* ==================== NAVIGATION ÉPURÉE ==================== */
-.site-header {
-  position: sticky;
+/* ==================== SIDEBAR FIXE À GAUCHE ==================== */
+.estate-sidebar {
+  width: var(--sidebar-w);
+  height: 100vh;
+  position: fixed;
   top: 0;
-  background: rgba(251, 249, 246, 0.98);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--c-border);
+  left: 0;
+  background: var(--c-sidebar-bg);
+  border-right: 1px solid var(--c-border);
+  overflow-y: auto;
   z-index: 1000;
 }
 
-.header-container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0.9rem 1.5rem;
+.sidebar-inner {
+  padding: 2rem 1.6rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.brand-block {
+.sidebar-brand {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--c-border);
+  margin-bottom: 1.5rem;
 }
 
-.brand-symbol {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--c-border);
-  background: var(--c-surface);
+.brand-crest-box {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--c-gold);
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  color: var(--c-stone-gold);
-  font-style: italic;
+  background: var(--c-gold-light);
   flex-shrink: 0;
 }
 
-.brand-text h1 {
-  font-size: 1.35rem;
-  font-weight: 600;
+.crest-monogram {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--c-gold);
   line-height: 1;
 }
 
-.brand-text span {
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  color: var(--c-muted);
+.brand-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.estate-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--c-text);
+  line-height: 1.2;
+}
+
+.estate-sub {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--c-gold);
   text-transform: uppercase;
-  display: block;
+  font-weight: 600;
   margin-top: 2px;
 }
 
-.main-navigation {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+.estate-loc {
+  font-size: 0.74rem;
+  color: var(--c-muted);
+  margin-top: 2px;
 }
 
-.nav-link {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--c-text);
-  padding: 0.3rem 0;
-  position: relative;
-  white-space: nowrap;
-}
-.nav-link:hover {
-  color: var(--c-stone-gold);
-}
-
-.btn-header-call {
-  background: var(--c-boxwood);
-  color: #FFF !important;
-  font-size: 0.86rem;
-  font-weight: 500;
-  padding: 0.5rem 1.1rem;
-  border-radius: var(--radius-sm);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  white-space: nowrap;
-}
-.btn-header-call:hover {
-  background: #233423;
-}
-
-/* ==================== HERO : PRÉSENTATION ==================== */
-.hero-landmark {
-  max-width: 1240px;
-  margin: 1.5rem auto 3.5rem;
-  padding: 0 1.5rem;
-}
-
-.hero-facade-card {
-  position: relative;
-  border-radius: var(--radius);
-  overflow: hidden;
-  border: 1px solid var(--c-border);
-  box-shadow: var(--shadow-card);
-  min-height: 520px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.hero-facade-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-shadow-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(30, 27, 24, 0.9) 0%, rgba(30, 27, 24, 0.42) 50%, rgba(30, 27, 24, 0.1) 100%);
-}
-
-.hero-content-panel {
-  position: relative;
-  z-index: 5;
-  padding: 3rem;
-  max-width: 860px;
-  color: #FFF;
-}
-
-.hero-tagline {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(6px);
-  padding: 0.3rem 0.85rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
+.menu-section-label {
+  font-size: 0.72rem;
   text-transform: uppercase;
-  margin-bottom: 0.9rem;
-  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--c-muted);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
-.hero-main-title {
-  font-size: clamp(2.2rem, 4.2vw, 3.6rem);
-  color: #FFF;
-  line-height: 1.15;
-  margin-bottom: 0.9rem;
-  font-weight: 500;
-}
-
-.hero-description {
-  font-size: clamp(1rem, 1.8vw, 1.18rem);
-  color: rgba(255, 255, 255, 0.92);
-  margin-bottom: 1.8rem;
-  max-width: 720px;
-  line-height: 1.6;
-}
-
-.hero-cta-group {
+.nav-list {
+  list-style: none;
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
-.btn-primary {
-  background: var(--c-stone-gold);
-  color: #FFF;
-  padding: 0.85rem 1.6rem;
-  border-radius: var(--radius-sm);
-  font-weight: 500;
-  font-size: 0.95rem;
-  display: inline-flex;
+.nav-tab {
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-.btn-primary:hover {
-  background: #845326;
-}
-
-.btn-secondary {
-  background: #FFF;
+  gap: 0.75rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: 4px;
+  font-size: 0.88rem;
   color: var(--c-text);
-  padding: 0.85rem 1.6rem;
-  border-radius: var(--radius-sm);
   font-weight: 500;
-  font-size: 0.95rem;
-  display: inline-flex;
+  transition: all 0.2s ease;
+}
+
+.nav-tab i {
+  font-size: 0.85rem;
+  color: var(--c-muted);
+  width: 16px;
+  text-align: center;
+}
+
+.nav-tab:hover {
+  background: var(--c-gold-light);
+  color: var(--c-gold);
+}
+.nav-tab:hover i {
+  color: var(--c-gold);
+}
+
+.nav-tab.active {
+  background: var(--c-gold-light);
+  color: var(--c-gold);
+  font-weight: 600;
+}
+.nav-tab.active i {
+  color: var(--c-gold);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.sidebar-phone-box {
+  background: var(--c-subtle-bg);
+  border: 1px solid var(--c-border);
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.phone-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--c-muted);
+  font-weight: 600;
+}
+
+.phone-number {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--c-boxwood);
+  font-weight: 700;
+}
+
+.phone-fixe {
+  font-size: 0.76rem;
+  color: var(--c-muted);
+}
+
+.sidebar-label-vmf {
+  display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--c-muted);
 }
-.btn-secondary:hover {
-  background: var(--c-subtle);
-}
-
-/* ==================== SECTIONS COMMUNES ==================== */
-.section-common {
-  max-width: 1240px;
-  margin: 0 auto 4.5rem;
-  padding: 0 1.5rem;
+.vmf-mini-logo {
+  width: 24px;
+  height: auto;
 }
 
-.section-head-simple {
-  margin-bottom: 2rem;
+/* ==================== ZONE PRINCIPALE À DROITE ==================== */
+.estate-main {
+  margin-left: var(--sidebar-w);
+  flex: 1;
+  padding: 2.5rem 3.5rem 5rem;
+  max-width: 1200px;
+}
+
+.page-section {
+  margin-bottom: 4.5rem;
+}
+
+/* En-tête de section sobre */
+.section-title-bar {
   border-bottom: 1px solid var(--c-border);
-  padding-bottom: 1rem;
+  padding-bottom: 0.9rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.section-head-simple h2 {
-  font-size: 2.1rem;
-}
-
-.section-head-simple span {
-  font-size: 0.85rem;
+.section-kicker {
+  font-size: 0.8rem;
   text-transform: uppercase;
-  color: var(--c-stone-gold);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  color: var(--c-gold);
   font-weight: 600;
   display: block;
   margin-bottom: 0.3rem;
 }
 
-/* ==================== HISTOIRE ==================== */
-.history-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 3.5rem;
-  align-items: center;
-  background: var(--c-surface);
-  border: 1px solid var(--c-border);
-  border-radius: var(--radius);
-  padding: 3.5rem;
-  box-shadow: var(--shadow-subtle);
+.section-main-heading {
+  font-size: 1.95rem;
+  font-weight: 700;
 }
 
-.history-title {
-  font-size: 2.3rem;
-  margin-bottom: 1.2rem;
-  color: var(--c-text);
-}
-
-.history-lead {
-  font-size: 1.12rem;
-  line-height: 1.7;
-  color: var(--c-text);
-  margin-bottom: 1.2rem;
-  font-weight: 500;
-}
-
-.history-text {
-  font-size: 0.98rem;
-  line-height: 1.75;
-  color: var(--c-muted);
-  margin-bottom: 1.2rem;
-}
-
-.timeline-mini {
-  margin-top: 1.8rem;
-  border-left: 2px solid var(--c-border);
-  padding-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.timeline-item {
-  position: relative;
-}
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -1.75rem;
-  top: 0.35rem;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--c-stone-gold);
-}
-
-.timeline-year {
-  font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: var(--c-stone-gold);
-}
-
-.timeline-desc {
-  font-size: 0.9rem;
-  color: var(--c-muted);
-}
-
-.history-visuals {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.history-img-frame {
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  border: 1px solid var(--c-border);
-}
-
-.img-legend {
-  font-size: 0.82rem;
+.header-note {
+  font-size: 0.85rem;
   color: var(--c-muted);
   font-style: italic;
-  padding: 0.5rem 0.8rem;
-  background: var(--c-subtle);
-  border-top: 1px solid var(--c-border);
+  max-width: 360px;
+  text-align: right;
 }
 
-/* ==================== GALERIE PHOTOS ==================== */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+.panel-subtitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
 }
 
-.gallery-card {
-  background: var(--c-surface);
+/* ==================== SECTION 1 : APERÇU PANORAMIQUE ==================== */
+.pano-banner {
+  position: relative;
+  min-height: 480px;
+  border-radius: 6px;
+  overflow: hidden;
   border: 1px solid var(--c-border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-subtle);
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 2rem;
 }
 
-.gallery-card-img {
-  height: 230px;
-  overflow: hidden;
-}
-.gallery-card-img img {
+.pano-bg {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
-}
-.gallery-card:hover .gallery-card-img img {
-  transform: scale(1.04);
 }
 
-.gallery-card-caption {
-  padding: 1.1rem 1.3rem;
+.pano-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(28, 25, 21, 0.92) 0%, rgba(28, 25, 21, 0.45) 50%, rgba(28, 25, 21, 0.1) 100%);
 }
 
-.gallery-card-caption h4 {
-  font-size: 1.15rem;
+.pano-details {
+  position: relative;
+  z-index: 5;
+  padding: 3rem;
+  color: #FFF;
+  max-width: 880px;
+}
+
+.pano-pills {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.pill-gold {
+  background: var(--c-gold);
+  color: #FFF;
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 3px;
+}
+
+.pill-white {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  color: #FFF;
+  font-size: 0.76rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 3px;
+}
+
+.pano-h2 {
+  font-size: 2.5rem;
+  color: #FFF;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+
+.pano-desc {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.6;
+}
+
+/* 4 Cartes métriques */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.metric-card {
+  background: var(--c-card-bg);
+  border: 1px solid var(--c-border);
+  padding: 1.6rem 1.4rem;
+  border-radius: 4px;
+}
+
+.metric-digit {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--c-gold);
+  display: block;
+  line-height: 1.1;
   margin-bottom: 0.3rem;
 }
 
-.gallery-card-caption p {
-  font-size: 0.86rem;
+.metric-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--c-text);
+}
+
+.metric-text {
+  font-size: 0.84rem;
   line-height: 1.5;
   color: var(--c-muted);
 }
 
-/* ==================== AGENDA & ANIMATIONS 2026 ==================== */
-.agenda-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.agenda-card {
-  background: var(--c-surface);
+/* ==================== HISTOIRE ==================== */
+.content-panel {
+  background: var(--c-card-bg);
   border: 1px solid var(--c-border);
-  border-radius: var(--radius);
-  padding: 1.6rem;
-  box-shadow: var(--shadow-subtle);
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  border-radius: 4px;
+  padding: 2.5rem;
 }
 
-.agenda-card.highlight {
-  border-color: var(--c-stone-gold);
-  background: #FFFDF9;
+.history-narrative-split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  align-items: start;
 }
 
-.agenda-date-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: var(--c-stone-light);
-  color: var(--c-stone-gold);
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.3rem 0.75rem;
-  border-radius: var(--radius-sm);
-  margin-bottom: 0.9rem;
-  width: fit-content;
-}
-
-.agenda-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.6rem;
-}
-
-.agenda-desc {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: var(--c-muted);
+.history-text-col p {
+  font-size: 0.98rem;
+  line-height: 1.7;
   margin-bottom: 1rem;
-  flex: 1;
 }
 
-.agenda-meta {
-  padding-top: 0.8rem;
-  border-top: 1px dashed var(--c-border-light);
+.history-imagery-col {
   display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  color: var(--c-text);
-  font-weight: 500;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-/* ==================== HÉBERGEMENTS & GÎTES ==================== */
-.gites-grid {
+.framed-document {
+  border: 1px solid var(--c-border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.doc-caption {
+  background: var(--c-subtle-bg);
+  padding: 0.55rem 0.85rem;
+  font-size: 0.78rem;
+  color: var(--c-muted);
+  border-top: 1px solid var(--c-border);
+}
+
+/* ==================== CATALOGUE PHOTOS ==================== */
+.visual-catalogue-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
-.gite-card {
-  background: var(--c-surface);
+.catalogue-item {
+  background: var(--c-card-bg);
   border: 1px solid var(--c-border);
-  border-radius: var(--radius);
-  padding: 2rem;
-  box-shadow: var(--shadow-subtle);
-  display: flex;
-  flex-direction: column;
-}
-
-.gite-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: var(--radius-sm);
-  background: var(--c-boxwood-light);
-  color: var(--c-boxwood);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  margin-bottom: 1.2rem;
-}
-
-.gite-card h3 {
-  font-size: 1.35rem;
-  margin-bottom: 0.4rem;
-}
-
-.gite-capacity {
-  font-size: 0.85rem;
-  color: var(--c-stone-gold);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.8rem;
-}
-
-.gite-desc {
-  font-size: 0.92rem;
-  line-height: 1.6;
-  color: var(--c-muted);
-  margin-bottom: 1.4rem;
-  flex: 1;
-}
-
-.gite-contact {
-  padding-top: 0.9rem;
-  border-top: 1px dashed var(--c-border-light);
-  font-size: 0.88rem;
-  color: var(--c-text);
-  font-weight: 500;
-}
-
-/* ==================== MARIAGES ==================== */
-.reception-split-card {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 3rem;
-  background: var(--c-surface);
-  border: 1px solid var(--c-border);
-  border-radius: var(--radius);
+  border-radius: 4px;
   overflow: hidden;
-  box-shadow: var(--shadow-subtle);
 }
 
-.reception-photo {
-  position: relative;
-  min-height: 440px;
+.catalogue-thumb {
+  height: 200px;
+  overflow: hidden;
 }
-.reception-photo img {
+
+.catalogue-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.catalogue-item:hover .catalogue-thumb img {
+  transform: scale(1.03);
 }
 
-.reception-info {
-  padding: 3rem 3rem 3rem 0;
+.catalogue-meta {
+  padding: 1rem;
+}
+
+.catalogue-meta strong {
+  display: block;
+  font-size: 0.98rem;
+  color: var(--c-text);
+  margin-bottom: 0.2rem;
+}
+
+.catalogue-meta span {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--c-muted);
+  line-height: 1.4;
+}
+
+/* ==================== AGENDA DOSSIER LIGNE PAR LIGNE ==================== */
+.agenda-dossier-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 1rem;
 }
 
-.reception-info h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-
-.reception-features-list {
-  list-style: none;
-  margin: 1.5rem 0 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.reception-features-list li {
-  display: flex;
+.dossier-row {
+  background: var(--c-card-bg);
+  border: 1px solid var(--c-border);
+  border-radius: 4px;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 140px 1fr 180px;
+  gap: 1.8rem;
   align-items: center;
-  gap: 0.7rem;
-  font-size: 0.95rem;
+}
+
+.dossier-row.highlight-dossier {
+  border-color: var(--c-gold);
+  background: #FFFDF9;
+}
+
+.dossier-date {
+  text-align: center;
+  border-right: 1px solid var(--c-border);
+  padding-right: 1.2rem;
+}
+
+.d-day {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--c-gold);
+  display: block;
+  line-height: 1;
+}
+
+.d-month {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--c-muted);
+  text-transform: uppercase;
+  margin-top: 4px;
+  display: block;
+}
+
+.dossier-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.gold-tag {
+  color: var(--c-gold) !important;
+  font-weight: 700 !important;
+}
+
+.dossier-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.dossier-summary {
+  font-size: 0.9rem;
+  color: var(--c-muted);
+  line-height: 1.55;
+}
+
+.dossier-action {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.dossier-price {
+  font-size: 0.88rem;
+  font-weight: 600;
   color: var(--c-text);
 }
-.reception-features-list i {
-  color: var(--c-boxwood);
+
+.dossier-contact {
+  font-size: 0.8rem;
+  color: var(--c-gold);
+  font-weight: 600;
 }
 
-/* ==================== VISITES ==================== */
-.visits-columns {
+/* ==================== GÎTES & HÉBERGEMENTS ==================== */
+.lodging-tri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.lodging-card {
+  background: var(--c-card-bg);
+  border: 1px solid var(--c-border);
+  border-radius: 4px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-suite {
+  border-color: var(--c-gold);
+  background: #FFFDF9;
+}
+
+.lodging-header-tag {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-muted);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.lodging-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.lodging-cap {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--c-gold);
+  margin-bottom: 0.9rem;
+  display: block;
+}
+
+.lodging-summary {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--c-muted);
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.lodging-footer {
+  border-top: 1px dashed var(--c-border);
+  padding-top: 0.9rem;
+  font-size: 0.82rem;
+  color: var(--c-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-micro {
+  color: var(--c-boxwood);
+  font-weight: 600;
+}
+.btn-micro:hover {
+  text-decoration: underline;
+}
+
+/* ==================== VISITES & TABLEAUX ==================== */
+.visit-table-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
-.info-box {
-  background: var(--c-surface);
+.visit-panel {
+  background: var(--c-card-bg);
   border: 1px solid var(--c-border);
-  border-radius: var(--radius);
-  padding: 2.2rem;
-  box-shadow: var(--shadow-subtle);
+  border-radius: 4px;
+  padding: 2rem;
 }
 
-.info-box-title {
-  font-size: 1.35rem;
-  margin-bottom: 1.4rem;
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.data-table td {
+  padding: 0.9rem 0;
+  border-bottom: 1px dashed var(--c-border);
+  font-size: 0.92rem;
+  vertical-align: top;
+}
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.table-right {
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.price-tag {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--c-gold);
+  font-weight: 700;
+}
+
+.free-tag {
+  color: var(--c-boxwood);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+}
+
+/* ==================== RÉCEPTIONS & MARIAGES ==================== */
+.reception-banner-box {
+  background: var(--c-card-bg);
+}
+
+.reception-title-box {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.bullets-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.bullet-entry {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid var(--c-border);
-}
-
-.hours-table {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-}
-
-.hours-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px dashed var(--c-border-light);
-}
-.hours-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.hours-item strong {
   font-size: 0.95rem;
-  color: var(--c-text);
 }
-.hours-item span {
+.bullet-entry i {
+  color: var(--c-boxwood);
+}
+
+.reception-cta-strip {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-solid-primary {
+  background: var(--c-gold);
+  color: #FFF !important;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.85rem 1.6rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.btn-solid-primary:hover {
+  background: #825024;
+}
+
+.direct-phone-mention {
   font-size: 0.9rem;
   color: var(--c-muted);
 }
-
-.pricing-table {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
+.direct-phone-mention strong {
+  color: var(--c-text);
 }
 
-.price-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px dashed var(--c-border-light);
-}
-.price-line:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.price-sum {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: var(--c-stone-gold);
-}
-
-/* ==================== MÉCÉNAT & AUTOUR DE LANTIS ==================== */
-.heritage-duo-grid {
+/* ==================== MÉCÉNAT & ENVIRONS ==================== */
+.dual-feature-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
-.heritage-card {
-  background: var(--c-surface);
+.feature-box {
+  background: var(--c-card-bg);
   border: 1px solid var(--c-border);
-  border-radius: var(--radius);
-  padding: 2.4rem;
-  box-shadow: var(--shadow-subtle);
+  padding: 2.2rem;
+  border-radius: 4px;
 }
 
-.heritage-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.feature-tag {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--c-gold);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
 }
 
-.surrounding-list {
+.btn-inline-link {
+  color: var(--c-gold);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.btn-inline-link:hover {
+  text-decoration: underline;
+}
+
+.surroundings-bullets {
   list-style: none;
   margin-top: 1rem;
   display: flex;
@@ -745,60 +816,112 @@ img {
   gap: 0.75rem;
 }
 
-.surrounding-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.65rem;
-  font-size: 0.92rem;
+.surroundings-bullets li {
+  font-size: 0.9rem;
   color: var(--c-muted);
-}
-.surrounding-list i {
-  color: var(--c-stone-gold);
-  margin-top: 4px;
+  line-height: 1.55;
 }
 
 /* ==================== CONTACT ==================== */
-.contact-deck {
+.contact-dossier-card {
+  background: var(--c-card-bg);
+  border: 1px solid var(--c-border);
+  padding: 2.5rem;
+  border-radius: 4px;
+}
+
+.contact-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
+  align-items: center;
 }
 
-.contact-card-item {
-  background: var(--c-surface);
+.parking-info-pill {
+  margin-top: 1rem;
+  background: var(--c-subtle-bg);
   border: 1px solid var(--c-border);
-  border-radius: var(--radius);
-  padding: 2.5rem;
-  box-shadow: var(--shadow-subtle);
+  padding: 0.6rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--c-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.contact-phone-direct {
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  color: var(--c-boxwood);
-  font-weight: 600;
-  display: inline-block;
-  margin: 0.5rem 0 1rem;
+.contact-line {
+  padding: 0.85rem 0;
+  border-bottom: 1px dashed var(--c-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.contact-phone-direct:hover {
-  text-decoration: underline;
+.contact-line:last-child {
+  border-bottom: none;
+}
+
+.c-label {
+  font-size: 0.88rem;
+  color: var(--c-muted);
+}
+
+.c-big-phone {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--c-boxwood);
+  font-weight: 700;
+}
+
+.c-val {
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 /* ==================== FOOTER ==================== */
-.site-footer {
-  background: var(--c-surface);
+.estate-footer {
   border-top: 1px solid var(--c-border);
-  padding: 2.8rem 1.5rem;
+  padding-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--c-muted);
 }
 
-.footer-container {
-  max-width: 1240px;
-  margin: 0 auto;
+.footer-split {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--c-muted);
+  gap: 1rem;
+}
+
+/* Responsive pour écrans moyens */
+@media (max-width: 1024px) {
+  .estate-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  body.estate-layout {
+    flex-direction: column;
+  }
+  .estate-main {
+    margin-left: 0;
+    padding: 2rem 1.5rem;
+  }
+  .metrics-grid,
+  .visual-catalogue-grid,
+  .lodging-tri-grid,
+  .visit-table-layout,
+  .dual-feature-layout,
+  .contact-split,
+  .history-narrative-split {
+    grid-template-columns: 1fr;
+  }
+  .dossier-row {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .dossier-action {
+    text-align: left;
+  }
 }
