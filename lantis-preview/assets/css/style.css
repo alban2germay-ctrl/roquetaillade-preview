@@ -1,27 +1,26 @@
 /* ==========================================================================
    CHÂTEAU DE LANTIS (Quercy • Lot)
-   Design Authentique, Naturel & Patrimonial (Zero artifice IA)
+   Design Authentique, Naturel & Ultra Documenté
    Palette minérale : Blanc chaud lin, pierre ocre du Lot, vert buis forêt
-   Typographie : EB Garamond & Inter (équilibré, sobre et noble)
    ========================================================================== */
 
 :root {
   --font-serif: 'EB Garamond', Georgia, serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-  /* Teintes naturelles et authentiques (pas de noir sombre ni de dégradé synthétique) */
+  /* Teintes minérales authentiques */
   --c-bg:            #FBF9F6;     /* Lin clair naturel */
-  --c-surface:       #FFFFFF;     /* Blanc chaud pur */
+  --c-surface:       #FFFFFF;     /* Blanc pur */
   --c-subtle:        #F4EFEA;     /* Pierre calcaire douce */
   --c-border:        #E2D9CC;     /* Filets pierre discrets */
   --c-border-light:  #ECE5DB;
 
-  --c-text:          #2A2723;     /* Gris anthracite chaud très lisible */
-  --c-muted:         #67625A;     /* Brun-gris pierre pour les textes secondaires */
+  --c-text:          #2A2723;     /* Anthracite minéral */
+  --c-muted:         #67625A;     /* Brun-gris pierre */
 
-  --c-stone-gold:    #9A6432;     /* Ocre chaud pierre du Quercy */
+  --c-stone-gold:    #9A6432;     /* Ocre chaud du Quercy */
   --c-stone-light:   #F5ECE1;
-  --c-boxwood:       #314730;     /* Vert buis naturel des jardins */
+  --c-boxwood:       #314730;     /* Vert buis naturel */
   --c-boxwood-light: #EEF3ED;
 
   --shadow-subtle: 0 4px 20px rgba(42, 39, 35, 0.05);
@@ -76,7 +75,7 @@ img {
   display: block;
 }
 
-/* ==================== BANDEAU D'EN-TÊTE AUTHENTIQUE ==================== */
+/* ==================== BANDEAU D'EN-TÊTE ==================== */
 .top-notice {
   background: var(--c-stone-light);
   border-bottom: 1px solid var(--c-border);
@@ -164,15 +163,16 @@ img {
 .main-navigation {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.5rem;
 }
 
 .nav-link {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--c-text);
   padding: 0.3rem 0;
   position: relative;
+  white-space: nowrap;
 }
 .nav-link:hover {
   color: var(--c-stone-gold);
@@ -181,19 +181,20 @@ img {
 .btn-header-call {
   background: var(--c-boxwood);
   color: #FFF !important;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 500;
-  padding: 0.55rem 1.15rem;
+  padding: 0.5rem 1.1rem;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  white-space: nowrap;
 }
 .btn-header-call:hover {
   background: #233423;
 }
 
-/* ==================== HERO : PRÉSENTATION NATURELLE ==================== */
+/* ==================== HERO : PRÉSENTATION ==================== */
 .hero-landmark {
   max-width: 1240px;
   margin: 1.5rem auto 3.5rem;
@@ -222,7 +223,7 @@ img {
 .hero-shadow-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(30, 27, 24, 0.88) 0%, rgba(30, 27, 24, 0.4) 45%, rgba(30, 27, 24, 0.1) 100%);
+  background: linear-gradient(to top, rgba(30, 27, 24, 0.9) 0%, rgba(30, 27, 24, 0.42) 50%, rgba(30, 27, 24, 0.1) 100%);
 }
 
 .hero-content-panel {
@@ -260,7 +261,7 @@ img {
   font-size: clamp(1rem, 1.8vw, 1.18rem);
   color: rgba(255, 255, 255, 0.92);
   margin-bottom: 1.8rem;
-  max-width: 700px;
+  max-width: 720px;
   line-height: 1.6;
 }
 
@@ -300,16 +301,40 @@ img {
   background: var(--c-subtle);
 }
 
-/* ==================== SECTION HISTORIQUE COMPLÈTE & ÉPOPÉE ==================== */
-.history-section {
+/* ==================== SECTIONS COMMUNES ==================== */
+.section-common {
   max-width: 1240px;
   margin: 0 auto 4.5rem;
   padding: 0 1.5rem;
 }
 
+.section-head-simple {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--c-border);
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section-head-simple h2 {
+  font-size: 2.1rem;
+}
+
+.section-head-simple span {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--c-stone-gold);
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* ==================== HISTOIRE ==================== */
 .history-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 3.5rem;
   align-items: center;
   background: var(--c-surface);
@@ -396,36 +421,7 @@ img {
   border-top: 1px solid var(--c-border);
 }
 
-/* ==================== GALERIE PHOTOS COMPLÈTE ==================== */
-.gallery-section {
-  max-width: 1240px;
-  margin: 0 auto 4.5rem;
-  padding: 0 1.5rem;
-}
-
-.section-head-simple {
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--c-border);
-  padding-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.section-head-simple h2 {
-  font-size: 2.1rem;
-}
-
-.section-head-simple span {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: var(--c-stone-gold);
-  letter-spacing: 0.05em;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.3rem;
-}
-
+/* ==================== GALERIE PHOTOS ==================== */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -471,13 +467,127 @@ img {
   color: var(--c-muted);
 }
 
-/* ==================== MARIAGES & RÉCEPTIONS ==================== */
-.reception-section {
-  max-width: 1240px;
-  margin: 0 auto 4.5rem;
-  padding: 0 1.5rem;
+/* ==================== AGENDA & ANIMATIONS 2026 ==================== */
+.agenda-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
+.agenda-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.agenda-card.highlight {
+  border-color: var(--c-stone-gold);
+  background: #FFFDF9;
+}
+
+.agenda-date-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--c-stone-light);
+  color: var(--c-stone-gold);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.9rem;
+  width: fit-content;
+}
+
+.agenda-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.agenda-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--c-muted);
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.agenda-meta {
+  padding-top: 0.8rem;
+  border-top: 1px dashed var(--c-border-light);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--c-text);
+  font-weight: 500;
+}
+
+/* ==================== HÉBERGEMENTS & GÎTES ==================== */
+.gites-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.gite-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+}
+
+.gite-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--c-boxwood-light);
+  color: var(--c-boxwood);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+}
+
+.gite-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.gite-capacity {
+  font-size: 0.85rem;
+  color: var(--c-stone-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.8rem;
+}
+
+.gite-desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--c-muted);
+  margin-bottom: 1.4rem;
+  flex: 1;
+}
+
+.gite-contact {
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--c-border-light);
+  font-size: 0.88rem;
+  color: var(--c-text);
+  font-weight: 500;
+}
+
+/* ==================== MARIAGES ==================== */
 .reception-split-card {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -530,13 +640,7 @@ img {
   color: var(--c-boxwood);
 }
 
-/* ==================== VISITES & HORAIRES CLAIRS ==================== */
-.visits-section {
-  max-width: 1240px;
-  margin: 0 auto 4.5rem;
-  padding: 0 1.5rem;
-}
-
+/* ==================== VISITES ==================== */
 .visits-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -613,13 +717,47 @@ img {
   color: var(--c-stone-gold);
 }
 
-/* ==================== CONTACT & PLAN ==================== */
-.contact-section {
-  max-width: 1240px;
-  margin: 0 auto 4.5rem;
-  padding: 0 1.5rem;
+/* ==================== MÉCÉNAT & AUTOUR DE LANTIS ==================== */
+.heritage-duo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
+.heritage-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 2.4rem;
+  box-shadow: var(--shadow-subtle);
+}
+
+.heritage-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.surrounding-list {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.surrounding-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.92rem;
+  color: var(--c-muted);
+}
+.surrounding-list i {
+  color: var(--c-stone-gold);
+  margin-top: 4px;
+}
+
+/* ==================== CONTACT ==================== */
 .contact-deck {
   display: grid;
   grid-template-columns: 1fr 1fr;
