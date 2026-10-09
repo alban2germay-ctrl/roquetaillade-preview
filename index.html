@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Château Fort de Roquetaillade | Le joyau médiéval de Bordeaux</title>
   <meta name="description" content="Site officiel du Château Fort de Roquetaillade à Mazères en Gironde. Visites guidées, horaires, tarifs 2026, réceptions et métairie.">
 
@@ -24,6 +24,7 @@
         <div class="brand-title">Roquetaillade</div>
       </a>
 
+      <!-- Menu Bureau -->
       <nav>
         <ul class="nav-links">
           <li><a href="#pratique">Infos Pratiques</a></li>
@@ -34,10 +35,26 @@
         </ul>
       </nav>
 
-      <a href="tel:0556761416" class="nav-contact-btn">
-        <i class="fa-solid fa-phone"></i>
-        <span>05.56.76.14.16</span>
-      </a>
+      <!-- Actions : Téléphone direct + Menu Burger Mobile -->
+      <div class="nav-actions">
+        <a href="tel:0556761416" class="nav-contact-btn" aria-label="Appeler le château au 05.56.76.14.16">
+          <i class="fa-solid fa-phone"></i>
+          <span>05.56.76.14.16</span>
+        </a>
+
+        <button class="mobile-burger-btn" id="burgerToggle" aria-label="Ouvrir le menu">
+          <i class="fa-solid fa-bars" id="burgerIcon"></i>
+        </button>
+      </div>
+
+      <!-- Tiroir Déroulant Mobile -->
+      <div class="mobile-menu-drawer" id="mobileDrawer">
+        <a href="#pratique" class="drawer-link"><i class="fa-solid fa-circle-info" style="color:var(--c-sand);margin-right:0.5rem;"></i> Infos Pratiques <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
+        <a href="#visite" class="drawer-link"><i class="fa-regular fa-clock" style="color:var(--c-moss);margin-right:0.5rem;"></i> Visite & Tarifs <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
+        <a href="#photos" class="drawer-link"><i class="fa-regular fa-image" style="color:var(--c-sand);margin-right:0.5rem;"></i> Le Domaine en Photos <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
+        <a href="#receptions" class="drawer-link"><i class="fa-solid fa-champagne-glasses" style="color:var(--c-moss);margin-right:0.5rem;"></i> Réceptions & Mariages <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
+        <a href="#contact" class="drawer-link"><i class="fa-solid fa-location-dot" style="color:var(--c-sand);margin-right:0.5rem;"></i> Accès & Contact <i class="fa-solid fa-chevron-right" style="font-size:0.8rem;color:var(--c-muted);"></i></a>
+      </div>
     </header>
   </div>
 
@@ -64,7 +81,7 @@
       </div>
 
       <!-- Slide 4 : Vue des deux châteaux (Vieux & Neuf) -->
-      <div class="slide" data-caption="Les deux châteaux forts réunis : Château Vieux (XIIᵉ) et Château Neuf (XIVᵉ)">
+      <div class="slide" data-caption="Les deux châteaux forts : Château Vieux (XIIᵉ) et Château Neuf (XIVᵉ)">
         <img src="assets/images/deux-chateaux-vue.jpg" alt="Vue des deux châteaux forts de Roquetaillade" class="slide-img">
         <div class="slide-overlay"></div>
       </div>
@@ -99,19 +116,19 @@
             <i class="fa-regular fa-clock"></i> Horaires & Tarifs
           </a>
           <a href="#pratique" class="btn btn-white">
-            <i class="fa-solid fa-circle-info"></i> Informations pratiques
+            <i class="fa-solid fa-circle-info"></i> Infos pratiques
           </a>
         </div>
       </div>
 
       <!-- Indicateurs de défilement cliquables (dots) -->
       <div class="slider-indicators" id="sliderDots">
-        <button class="slider-dot active" onclick="goToSlide(0)"></button>
-        <button class="slider-dot" onclick="goToSlide(1)"></button>
-        <button class="slider-dot" onclick="goToSlide(2)"></button>
-        <button class="slider-dot" onclick="goToSlide(3)"></button>
-        <button class="slider-dot" onclick="goToSlide(4)"></button>
-        <button class="slider-dot" onclick="goToSlide(5)"></button>
+        <button class="slider-dot active" onclick="goToSlide(0)" aria-label="Photo 1"></button>
+        <button class="slider-dot" onclick="goToSlide(1)" aria-label="Photo 2"></button>
+        <button class="slider-dot" onclick="goToSlide(2)" aria-label="Photo 3"></button>
+        <button class="slider-dot" onclick="goToSlide(3)" aria-label="Photo 4"></button>
+        <button class="slider-dot" onclick="goToSlide(4)" aria-label="Photo 5"></button>
+        <button class="slider-dot" onclick="goToSlide(5)" aria-label="Photo 6"></button>
       </div>
 
     </div>
@@ -259,7 +276,7 @@
     <div class="gallery-strip">
       <!-- 1 : Vue aérienne spectaculaire -->
       <div class="photo-card" onclick="showModal('assets/images/chateau-aerien.jpg')">
-        <img src="assets/images/chateau-aerien.jpg" alt="Vue aérienne du Château Neuf" class="photo-thumb">
+        <img src="assets/images/chateau-aerien.jpg" alt="Vue aérienne du Château Neuf" class="photo-thumb" loading="lazy">
         <div class="photo-info">
           <span class="photo-name">Vue d'ensemble du Château Neuf</span>
           <span class="photo-tag">Architecture</span>
@@ -268,7 +285,7 @@
 
       <!-- 2 : Remparts au soleil -->
       <div class="photo-card" onclick="showModal('assets/images/chateau-remparts-soleil.jpg')">
-        <img src="assets/images/chateau-remparts-soleil.jpg" alt="Tours et remparts de Roquetaillade" class="photo-thumb">
+        <img src="assets/images/chateau-remparts-soleil.jpg" alt="Tours et remparts de Roquetaillade" class="photo-thumb" loading="lazy">
         <div class="photo-info">
           <span class="photo-name">Les tours et remparts médiévaux</span>
           <span class="photo-tag">Médiéval</span>
@@ -277,7 +294,7 @@
 
       <!-- 3 : La Chapelle -->
       <div class="photo-card" onclick="showModal('assets/images/chapelle-viollet.jpg')">
-        <img src="assets/images/chapelle-viollet.jpg" alt="La Chapelle peinte" class="photo-thumb">
+        <img src="assets/images/chapelle-viollet.jpg" alt="La Chapelle peinte" class="photo-thumb" loading="lazy">
         <div class="photo-info">
           <span class="photo-name">La Chapelle et ses fresques</span>
           <span class="photo-tag">Viollet-le-Duc</span>
@@ -286,7 +303,7 @@
 
       <!-- 4 : Salons d'apparat -->
       <div class="photo-card" onclick="showModal('assets/images/interieur-viollet.jpg')">
-        <img src="assets/images/interieur-viollet.jpg" alt="Salons Viollet-le-Duc" class="photo-thumb">
+        <img src="assets/images/interieur-viollet.jpg" alt="Salons Viollet-le-Duc" class="photo-thumb" loading="lazy">
         <div class="photo-info">
           <span class="photo-name">Salons polychromes d'apparat</span>
           <span class="photo-tag">Décors</span>
@@ -295,16 +312,16 @@
 
       <!-- 5 : Chambre rose Viollet-le-Duc -->
       <div class="photo-card" onclick="showModal('assets/images/chambre-rose-viollet.jpg')">
-        <img src="assets/images/chambre-rose-viollet.jpg" alt="Chambre rose par Viollet-le-Duc" class="photo-thumb">
+        <img src="assets/images/chambre-rose-viollet.jpg" alt="Chambre rose par Viollet-le-Duc" class="photo-thumb" loading="lazy">
         <div class="photo-info">
           <span class="photo-name">Chambre décorée par Viollet-le-Duc</span>
           <span class="photo-tag">Intérieurs</span>
         </div>
       </div>
 
-      <!-- 6 : Cathédrale de Bazas (Patrimoine lié) -->
+      <!-- 6 : Cathédrale de Bazas -->
       <div class="photo-card" onclick="showModal('assets/images/cathedrale-bazas.jpg')">
-        <img src="assets/images/cathedrale-bazas.jpg" alt="Cathédrale Saint-Jean-Baptiste de Bazas" class="photo-thumb">
+        <img src="assets/images/cathedrale-bazas.jpg" alt="Cathédrale Saint-Jean-Baptiste de Bazas" class="photo-thumb" loading="lazy">
         <div class="photo-info">
           <span class="photo-name">Cathédrale de Bazas</span>
           <span class="photo-tag">Patrimoine lié</span>
@@ -313,7 +330,7 @@
 
       <!-- 7 : Les deux châteaux -->
       <div class="photo-card" onclick="showModal('assets/images/deux-chateaux-vue.jpg')">
-        <img src="assets/images/deux-chateaux-vue.jpg" alt="Château Vieux et Château Neuf" class="photo-thumb">
+        <img src="assets/images/deux-chateaux-vue.jpg" alt="Château Vieux et Château Neuf" class="photo-thumb" loading="lazy">
         <div class="photo-info">
           <span class="photo-name">Château Vieux (XIIᵉ) & Neuf (XIVᵉ)</span>
           <span class="photo-tag">700 ans d'histoire</span>
@@ -322,7 +339,7 @@
 
       <!-- 8 : Vaches bazadaises à la métairie -->
       <div class="photo-card" onclick="showModal('assets/images/vaches-bazadaises.jpg')">
-        <img src="assets/images/vaches-bazadaises.jpg" alt="Vaches bazadaises à la métairie" class="photo-thumb">
+        <img src="assets/images/vaches-bazadaises.jpg" alt="Vaches bazadaises à la métairie" class="photo-thumb" loading="lazy">
         <div class="photo-info">
           <span class="photo-name">La Métairie & Vaches bazadaises</span>
           <span class="photo-tag">Écomusée</span>
@@ -331,7 +348,7 @@
 
       <!-- 9 : Photo de nuit (Salle synodale & Restauration) -->
       <div class="photo-card" onclick="showModal('assets/images/chateau-nuit.jpg')">
-        <img src="assets/images/chateau-nuit.jpg" alt="Le Château de Roquetaillade la nuit" class="photo-thumb">
+        <img src="assets/images/chateau-nuit.jpg" alt="Le Château de Roquetaillade la nuit" class="photo-thumb" loading="lazy">
         <div class="photo-info">
           <span class="photo-name">Chantier & Salle Synodale</span>
           <span class="photo-tag">Nocturne & Restauration</span>
@@ -340,7 +357,7 @@
     </div>
 
     <!-- Encart d'explication des travaux de restauration -->
-    <div style="background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--radius); padding: 1.8rem; margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; box-shadow: var(--shadow);">
+    <div style="background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--radius); padding: 1.8rem; margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; box-shadow: var(--shadow-sm);">
       <div style="max-width: 760px;">
         <h3 style="font-size: 1.15rem; margin-bottom: 0.4rem; color: var(--c-text);">
           <i class="fa-solid fa-hammer" style="color: var(--c-sand); margin-right: 0.5rem;"></i> Les chantiers de restauration & la Salle Synodale
@@ -369,7 +386,7 @@
 
     <div class="reception-split">
       <div class="reception-visual">
-        <img src="assets/images/reception-salle.jpg" alt="Salles de réception du château de Roquetaillade">
+        <img src="assets/images/reception-salle.jpg" alt="Salles de réception du château de Roquetaillade" loading="lazy">
       </div>
       <div class="reception-desc">
         <h3 style="font-size: 1.4rem; margin-bottom: 0.8rem;">Mariages, Séminaires & Déjeuners</h3>
@@ -408,7 +425,7 @@
         <p style="color: var(--c-muted); font-size: 0.95rem;">33210 Mazères (Gironde) • À 10 min de Langon (A62)</p>
 
         <a href="tel:0556761416" class="contact-phone-big">
-          <i class="fa-solid fa-phone" style="font-size: 1.4rem; margin-right: 0.5rem;"></i>05.56.76.14.16
+          <i class="fa-solid fa-phone" style="font-size: 1.3rem; margin-right: 0.4rem;"></i>05.56.76.14.16
         </a>
 
         <div style="margin-bottom: 1rem; font-size: 0.95rem;">
@@ -459,6 +476,26 @@
   </div>
 
   <script>
+    // ==================== MENU BURGER MOBILE ====================
+    const burgerBtn = document.getElementById('burgerToggle');
+    const burgerIcon = document.getElementById('burgerIcon');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+
+    if (burgerBtn && mobileDrawer) {
+      burgerBtn.addEventListener('click', () => {
+        const isOpen = mobileDrawer.classList.toggle('open');
+        burgerIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+      });
+
+      // Fermer le tiroir quand on clique sur un lien
+      document.querySelectorAll('.drawer-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileDrawer.classList.remove('open');
+          burgerIcon.className = 'fa-solid fa-bars';
+        });
+      });
+    }
+
     // ==================== CARROUSEL AUTOMATIQUE EN DOUCEUR ====================
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
