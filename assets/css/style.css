@@ -152,165 +152,57 @@ img {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 0.3rem;
+  gap: 0.35rem;
   align-items: center;
   background: var(--c-subtle);
-  padding: 0.25rem 0.4rem;
+  padding: 0.3rem 0.5rem;
   border-radius: 30px;
+  border: 1px solid rgba(230, 223, 212, 0.7);
 }
 
 .nav-links a {
   color: var(--c-muted);
   font-size: 0.88rem;
   font-weight: 500;
-  padding: 0.42rem 0.9rem;
+  padding: 0.45rem 1rem;
   border-radius: 20px;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap;
 }
 
 .nav-links a:hover {
-  color: var(--c-text);
-  background: rgba(255, 255, 255, 0.95);
+  color: var(--c-moss);
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Actions Header */
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.75rem;
 }
 
 .header-call-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1.1rem;
+  gap: 0.55rem;
+  padding: 0.55rem 1.25rem;
   background: var(--c-moss);
   color: #FFF;
   border-radius: 30px;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+  transition: all 0.25s ease;
   white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(46, 67, 43, 0.15);
+  box-shadow: 0 2px 8px rgba(46, 67, 43, 0.2);
 }
 .header-call-btn:hover {
   background: #1e2c1c;
   color: #FFF;
-}
-
-/* Bouton Burger Mobile */
-.mobile-menu-toggle {
-  display: none;
-  background: var(--c-subtle);
-  border: 1px solid var(--c-border);
-  color: var(--c-text);
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius-sm);
-  align-items: center;
-  justify-content: center;
-  font-size: 1.15rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.mobile-menu-toggle:active {
-  background: var(--c-border);
-}
-
-/* Tiroir Mobile Pleine Largeur */
-.mobile-drawer {
-  display: none;
-  background: #FFFFFF;
-  border-top: 1px solid var(--c-border);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-}
-
-.mobile-drawer.open {
-  display: block;
-  animation: drawerSlide 0.25s ease-out;
-}
-
-@keyframes drawerSlide {
-  from {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.drawer-inner {
-  padding: 0.85rem 1.25rem 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.drawer-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 0.85rem;
-  border-radius: var(--radius);
-  color: var(--c-text);
-  transition: background 0.15s ease;
-  text-decoration: none;
-}
-.drawer-link:hover, .drawer-link:active {
-  background: var(--c-subtle);
-}
-
-.drawer-link-content {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-}
-
-.drawer-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.95rem;
-  flex-shrink: 0;
-}
-
-.drawer-title {
-  display: block;
-  font-size: 0.96rem;
-  font-weight: 600;
-  color: var(--c-text);
-  line-height: 1.2;
-}
-
-.drawer-subtitle {
-  display: block;
-  font-size: 0.78rem;
-  color: var(--c-muted);
-  margin-top: 2px;
-}
-
-.drawer-chevron {
-  font-size: 0.8rem;
-  color: var(--c-muted);
-}
-
-.drawer-footer {
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--c-border);
-}
-
-.btn-full {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  box-shadow: 0 4px 14px rgba(46, 67, 43, 0.3);
+  transform: translateY(-1px);
 }
 
 /* Boutons */
@@ -890,48 +782,36 @@ img {
 }
 
 @media (max-width: 768px) {
-  /* En-tête mobile épuré et solide */
+  /* En-tête sur petits écrans : simple, épuré, centré sur l'essentiel */
   .site-header {
     border-bottom: 1px solid var(--c-border);
   }
 
   .header-inner {
-    padding: 0.65rem 1rem;
+    padding: 0.75rem 1rem;
   }
 
   .brand-crest {
-    width: 34px;
-    height: 34px;
-    font-size: 1.1rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1.15rem;
   }
 
   .brand-title {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   .brand-sub {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
   }
 
   .nav-desktop {
-    display: none; /* Remplacé par tiroir burger */
-  }
-
-  .mobile-menu-toggle {
-    display: inline-flex;
-  }
-
-  .header-call-btn .call-text {
-    display: none; /* Juste l'icône téléphone pour gagner de l'espace sur mobile */
+    display: none;
   }
 
   .header-call-btn {
-    padding: 0.55rem;
-    border-radius: var(--radius-sm);
-    width: 42px;
-    height: 42px;
-    justify-content: center;
-    font-size: 1.05rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
   }
 
   /* Hero Mobile */
