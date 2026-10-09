@@ -3,336 +3,437 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Château de Lantis | Domaine d'Exception en Quercy (XVe & XVIIe s.)</title>
-  <meta name="description" content="Demeure seigneuriale du XVe siècle au cœur du Lot. Jardins Renaissance, réceptions privées de prestige et visites guidées intimistes.">
+  <title>Château de Lantis | L'Épopée Médiévale & Événements d'Exception</title>
+  <meta name="description" content="Découvrez le Château de Lantis en Quercy : visites théâtralisées, réceptions féeriques aux flambeaux et jardins Renaissance.">
 
-  <!-- Polices d'inspiration éditoriale d'art : Cormorant Garamond & Montserrat -->
+  <!-- Polices cinématiques puissantes : Cinzel & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- Navigation Éditoriale Épurée -->
-  <nav class="editorial-nav">
-    <div class="nav-container">
-      <div class="nav-side">
-        <a href="#visites" class="nav-item">Visites</a>
-        <a href="#mariages" class="nav-item">Mariages & Réceptions</a>
-      </div>
-      <a href="#accueil" class="nav-monogram">
-        <span class="monogram-letter">L</span>
-        <span class="monogram-caption">Château de Lantis</span>
-      </a>
-      <div class="nav-side nav-right">
-        <a href="#histoire" class="nav-item">Histoire</a>
-        <a href="#contact" class="nav-item">Accès & Contact</a>
-        <a href="tel:0632960089" class="nav-btn-direct"><i class="fa-solid fa-phone"></i> 06.32.96.00.89</a>
-      </div>
+  <!-- BARRE D'ANNONCE & INFOS EN DIRECT (STYLE PUY DU FOU) -->
+  <div class="top-announcement">
+    <div class="announcement-inner">
+      <span><i class="fa-solid fa-sparkles"></i> <strong>Saison 2026 :</strong> Ouverture des réservations mariages & nocturnes aux flambeaux</span>
+      <a href="tel:0632960089" class="top-call-link"><i class="fa-solid fa-phone"></i> Ligne directe : 06 32 96 00 89</a>
     </div>
-  </nav>
+  </div>
 
-  <!-- ==================== HERO : SPLIT-SCREEN ÉDITORIAL ==================== -->
-  <header class="editorial-hero" id="accueil">
-    <div class="hero-split">
+  <!-- NAVIGATION CINÉMATIQUE HAUT DE GAMME -->
+  <header class="cinema-header">
+    <div class="header-content">
       
-      <!-- Volet Gauche : Récit & Typographie d'Art -->
-      <div class="hero-text-pane">
-        <div class="hero-inner">
-          <div class="heritage-label">
-            <span class="dash"></span> Dégagnac • Lot & Quercy
-          </div>
-          <h1 class="hero-h1">
-            La renaissance d'une forteresse <em>oubliée</em>
-          </h1>
-          <p class="hero-intro">
-            Édifié au XVᵉ siècle face aux positions anglaises puis réhabilité au terme de 40 années de fouilles méticuleuses, le Château de Lantis réunit pierres dorées du Quercy, parterres Renaissance et accueil de réceptions d'exception.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#mariages" class="btn-royal">
-              <span>Organiser un Mariage</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#visites" class="btn-subtle">
-              <span>Horaires des Visites</span>
-            </a>
-          </div>
-
-          <div class="hero-distinctions">
-            <div class="distinction-item">
-              <span class="distinction-num">1460</span>
-              <span class="distinction-txt">Fondation seigneuriale</span>
-            </div>
-            <div class="distinction-sep"></div>
-            <div class="distinction-item">
-              <span class="distinction-num">VMF</span>
-              <span class="distinction-txt">Prix Sauvegarde</span>
-            </div>
-            <div class="distinction-sep"></div>
-            <div class="distinction-item">
-              <span class="distinction-num">★</span>
-              <span class="distinction-txt">Jardin Remarquable</span>
-            </div>
-          </div>
+      <a href="#hero" class="cinema-brand">
+        <div class="brand-emblem"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="brand-titles">
+          <span class="main-name">CHÂTEAU DE LANTIS</span>
+          <span class="sub-name">DOMAINE HISTORIQUE DU QUERCY • XVᵉ SIÈCLE</span>
         </div>
-      </div>
+      </a>
 
-      <!-- Volet Droit : Galerie Immersive à Grille Asymétrique -->
-      <div class="hero-visual-pane">
-        <div class="visual-card visual-main">
-          <img src="assets/images/facade-lantis.webp" alt="Façade du Château de Lantis" class="v-img">
-          <div class="v-caption">Logis du XVᵉ & pierres dorées du Quercy</div>
-        </div>
-        <div class="visual-duo">
-          <div class="visual-card visual-sub">
-            <img src="assets/images/jardin-lantis.webp" alt="Jardins Renaissance de Lantis" class="v-img">
-            <div class="v-caption">Buis en pointe de diamant</div>
-          </div>
-          <div class="visual-card visual-sub">
-            <img src="assets/images/flambeaux-lantis.webp" alt="Cour aux flambeaux la nuit" class="v-img">
-            <div class="v-caption">Soirée aux flambeaux</div>
-          </div>
-        </div>
+      <nav class="cinema-nav">
+        <a href="#experiences" class="c-link">Expériences</a>
+        <a href="#mariages" class="c-link highlight-link"><i class="fa-solid fa-crown"></i> Mariages & Soirées</a>
+        <a href="#visites" class="c-link">Billetterie & Horaires</a>
+        <a href="#epopee" class="c-link">L'Histoire</a>
+        <a href="#contact" class="c-link">Accès</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#mariages" class="btn-fire">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <span>Privatiser le Domaine</span>
+        </a>
       </div>
 
     </div>
   </header>
 
-  <!-- ==================== LES 3 UNIVERS DU DOMAINE ==================== -->
-  <section class="domain-pillars">
-    <div class="container-tight">
-      <div class="section-badge">Le Domaine</div>
-      <h2 class="title-serif">Trois manières de vivre Lantis</h2>
-      
-      <div class="pillars-row">
+  <!-- ==================== HERO CINÉMATIQUE IMMERSIF (STYLE PUY DU FOU / CHAMBORD) ==================== -->
+  <section class="cinema-hero" id="hero">
+    <div class="hero-video-bg">
+      <img src="assets/images/flambeaux-lantis.webp" alt="Château de Lantis sous les flambeaux" class="hero-img-backdrop">
+      <div class="hero-gradient-overlay"></div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-center-content">
         
-        <div class="pillar-box">
-          <div class="pillar-num">01</div>
-          <h3 class="pillar-title">Visites d'Auteur</h3>
-          <p class="pillar-desc">
-            Menées directement par les propriétaires, découvrez la salle des gardes, la porte Renaissance d'époque et l'unique dallage en étoile d'escarboucle.
-          </p>
-          <a href="#visites" class="pillar-link">Découvrir les visites &rarr;</a>
+        <div class="hero-crest-badge">
+          <span class="gold-line"></span>
+          <span>LOT & QUERCY • AUX PORTES DE SARLAT</span>
+          <span class="gold-line"></span>
         </div>
 
-        <div class="pillar-box highlight-pillar">
-          <div class="pillar-num">02</div>
-          <h3 class="pillar-title">Mariages Privatisés</h3>
-          <p class="pillar-desc">
-            Un domaine clos et secret privatisé pour votre week-end. Cour d'honneur illuminée aux flambeaux, cocktails dans les buis et gîtes sur place.
-          </p>
-          <a href="#mariages" class="pillar-link">Espaces de réception &rarr;</a>
-        </div>
+        <h1 class="hero-epic-title">
+          VIVEZ LA FÉERIE<br>
+          <span class="gold-gradient">D'UN DOMAINE HORS DU TEMPS</span>
+        </h1>
 
-        <div class="pillar-box">
-          <div class="pillar-num">03</div>
-          <h3 class="pillar-title">Séjours & Gîtes</h3>
-          <p class="pillar-desc">
-            Vivez au rythme de la demeure seigneuriale. Chambres de charme au calme absolu des collines quercynoises, à quelques minutes de Sarlat.
-          </p>
-          <a href="#contact" class="pillar-link">Réserver un séjour &rarr;</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== MARIAGES & RÉCEPTIONS ==================== -->
-  <section class="section-full reception-universe" id="mariages">
-    <div class="reception-container">
-      
-      <div class="reception-frame">
-        <div class="reception-img-block">
-          <img src="assets/images/flambeaux-lantis.webp" alt="Cour d'honneur aux flambeaux" class="reception-hero-img">
-          <div class="reception-overlay-badge">
-            <i class="fa-solid fa-sparkles"></i> Privatisation Totale
-          </div>
-        </div>
-
-        <div class="reception-content-block">
-          <div class="sub-label">Événements Privés & Professionnels</div>
-          <h2 class="reception-headline">Votre mariage sous les flambeaux du Quercy</h2>
-          <p class="reception-lead">
-            Loin des salles impersonnelles, le Château de Lantis offre l'intimité d'une demeure historique vivante, entourée de forêts préservées.
-          </p>
-
-          <div class="reception-specs-grid">
-            <div class="spec-cell">
-              <span class="spec-label">Capacité assise</span>
-              <span class="spec-value">Jusqu'à 150 personnes</span>
-            </div>
-            <div class="spec-cell">
-              <span class="spec-label">Formule traiteur</span>
-              <span class="spec-value">Libre de traiteur</span>
-            </div>
-            <div class="spec-cell">
-              <span class="spec-label">Hébergement</span>
-              <span class="spec-value">Gîtes & chambres sur place</span>
-            </div>
-            <div class="spec-cell">
-              <span class="spec-label">Exclusivité</span>
-              <span class="spec-value">Tout le week-end réservé</span>
-            </div>
-          </div>
-
-          <div class="reception-cta">
-            <a href="mailto:chateaudelantis@gmail.com?subject=Demande%20de%20devis%20Mariage%20au%20Ch%C3%A2teau%20de%20Lantis" class="btn-royal">
-              <span>Demander les disponibilités & brochure</span>
-              <i class="fa-regular fa-envelope"></i>
-            </a>
-            <span class="direct-call">ou au <strong>06 32 96 00 89</strong></span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== VISITES & ACCÈS ==================== -->
-  <section class="section-full visit-universe" id="visites">
-    <div class="container-tight">
-      
-      <div class="visit-layout">
-        
-        <div class="visit-narrative">
-          <div class="section-badge">Visites du Monument</div>
-          <h2 class="title-serif">Découvrir le logis seigneurial</h2>
-          <p class="visit-p">
-            La visite commentée traverse les salles restaurées de la forteresse, la cour d'honneur, la chapelle et l'arboretum d'arbres rares. Les propriétaires partagent avec vous l'épopée de la reconstruction de ce monument sorti de terre.
-          </p>
-
-          <div class="pricing-card">
-            <div class="pricing-header">Tarifs des Visites 2026</div>
-            <div class="pricing-rows">
-              <div class="p-row">
-                <span>Adulte (plein tarif)</span>
-                <strong>10,00 €</strong>
-              </div>
-              <div class="p-row">
-                <span>Tarif réduit (étudiants, 12-18 ans)</span>
-                <strong>8,00 €</strong>
-              </div>
-              <div class="p-row">
-                <span>Enfants de moins de 12 ans</span>
-                <strong style="color:var(--c-amber);">Gratuit</strong>
-              </div>
-              <div class="p-row">
-                <span>Groupes (sur rendez-vous dès 10 pers.)</span>
-                <strong>8,00 € / pers.</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="visit-calendar-card">
-          <div class="calendar-header">
-            <i class="fa-regular fa-calendar-days"></i> Périodes d'Ouverture
-          </div>
-
-          <div class="calendar-item">
-            <div class="cal-season">Juillet & Août (Haute Saison)</div>
-            <div class="cal-hours">Ouvert tous les jours</div>
-            <div class="cal-detail">10h00 à 12h00 • 14h00 à 18h00</div>
-          </div>
-
-          <div class="calendar-item">
-            <div class="cal-season">Avril • Mai • Juin • Septembre</div>
-            <div class="cal-hours">14h00 à 18h00</div>
-            <div class="cal-detail">Tous les jours sauf le mardi</div>
-          </div>
-
-          <div class="calendar-item">
-            <div class="cal-season">Groupes & Scolaires</div>
-            <div class="cal-hours">Toute l'année sur réservation</div>
-            <div class="cal-detail">Visites privées en français ou anglais</div>
-          </div>
-
-          <div class="contact-box-accent">
-            <div class="box-label">Renseignements Visites</div>
-            <a href="tel:0565411147" class="accent-phone"><i class="fa-solid fa-phone"></i> 05.65.41.11.47</a>
-            <div class="box-sub">Réservation conseillée pour les groupes</div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== HISTOIRE : L'AVENTURE HUMAINE ==================== -->
-  <section class="section-full story-universe" id="histoire">
-    <div class="story-wrapper">
-      <div class="story-content">
-        <span class="story-quote-mark">“</span>
-        <h2 class="story-quote">
-          Nous n'avons pas seulement restauré des murs, nous avons rendu son âme à une forteresse oubliée.
-        </h2>
-        <p class="story-text">
-          Pendant plus d'un siècle, le Château de Lantis n'était plus qu'une ruine enfouie sous les gravats et les ronces. Il a fallu la détermination de Françoise et Michel Barbier-Damiette, creusant patiemment dès les années 1990, pour ressusciter ce chef-d'œuvre du Quercy. Aujourd'hui, l'édifice vit à nouveau : concert, mariages, visites et accueil chaleureux perpétuent cette aventure humaine unique.
+        <p class="hero-epic-desc">
+          Une forteresse médiévale ressuscitée pour vos plus grands moments. Événements exclusifs aux flambeaux, jardins Renaissance et visites légendaires.
         </p>
-        <div class="story-signature">
-          — Françoise & Michel Barbier-Damiette, <em>Propriétaires</em>
+
+        <div class="hero-action-dock">
+          <a href="#mariages" class="btn-gold-epic">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <span>Découvrir les Mariages & Soirées</span>
+          </a>
+          <a href="#visites" class="btn-glass-epic">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Horaires & Tarifs des Visites</span>
+          </a>
         </div>
+
+        <!-- STATS / PRESTIGE ROW -->
+        <div class="stats-ribbon">
+          <div class="stat-cell">
+            <span class="stat-number">40</span>
+            <span class="stat-label">Ans de résurrection</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-number">150</span>
+            <span class="stat-label">Invités en réception</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Privatisation exclusive</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-number">VMF</span>
+            <span class="stat-label">Prix Sauvegarde National</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ==================== CONTACT & LOCALISATION ==================== -->
-  <section class="section-full contact-universe" id="contact">
-    <div class="container-tight">
-      <div class="contact-columns">
+  <!-- ==================== 3 GRANDES EXPÉRIENCES IMMERSIVES ==================== -->
+  <section class="experiences-section" id="experiences">
+    <div class="section-container">
+      
+      <div class="section-title-wrap">
+        <span class="gold-subtitle"><i class="fa-solid fa-compass"></i> ÉVÉNEMENTS & PATRIMOINE</span>
+        <h2 class="section-cinema-title">CHOISISSEZ VOTRE EXPÉRIENCE</h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="experiences-grid">
         
-        <div>
-          <div class="section-badge">Accès & Plan</div>
-          <h2 class="title-serif">Rejoindre le Château</h2>
-          <p style="margin-bottom:1.5rem;color:var(--c-muted);">
-            Idéalement situé dans les collines boisées de la Bouriane, entre Sarlat (Dordogne) et Cahors (Lot).
-          </p>
-          <div class="address-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <div>
-              <strong>Château de Lantis</strong><br>
-              Hameau de Lantis, 46340 Dégagnac<br>
-              <em>Parking gratuit voitures & autocars</em>
+        <!-- CARTE 1 : MARIAGES FÉERIQUES AUX FLAMBEAUX -->
+        <div class="experience-card card-spotlight">
+          <div class="card-media">
+            <img src="assets/images/flambeaux-lantis.webp" alt="Mariages aux flambeaux" class="card-img">
+            <div class="card-badge-gold"><i class="fa-solid fa-crown"></i> PRIVATISATION TOTALE</div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">RÉCEPTIONS DE PRESTIGE</span>
+            <h3 class="card-title">Mariages & Grandes Soirées aux Flambeaux</h3>
+            <p class="card-text">
+              Transformez votre célébration en un moment royal inoubliable : cour d'honneur illuminée au feu nocturne, liberté totale de traiteur, jardins pour cocktails et gîtes sur place.
+            </p>
+            <div class="card-footer-action">
+              <a href="#mariages" class="btn-card-gold">Voir l'offre Mariage &rarr;</a>
             </div>
           </div>
         </div>
 
-        <div class="contact-direct-card">
-          <h3 style="font-family:var(--font-serif);font-size:1.6rem;margin-bottom:1rem;">Échanger directement</h3>
-          <p style="color:var(--c-muted);margin-bottom:1.5rem;">
-            Pour vos projets de mariages, réceptions ou visites guidées particulières :
-          </p>
-
-          <div class="direct-contact-line">
-            <span class="d-label">Téléphone portable :</span>
-            <a href="tel:0632960089" class="d-val">06 32 96 00 89</a>
+        <!-- CARTE 2 : VISITES GUIDÉES DES PROPRIÉTAIRES -->
+        <div class="experience-card">
+          <div class="card-media">
+            <img src="assets/images/facade-lantis.webp" alt="Façade du Château de Lantis" class="card-img">
+            <div class="card-badge-dark"><i class="fa-solid fa-ticket"></i> VISITES GUIDÉES</div>
           </div>
-
-          <div class="direct-contact-line">
-            <span class="d-label">Téléphone fixe :</span>
-            <a href="tel:0565411147" class="d-val">05 65 41 11 47</a>
+          <div class="card-body">
+            <span class="card-category">PATRIMOINE HISTORIQUE</span>
+            <h3 class="card-title">L'Épopée des Salles Fortifiées</h3>
+            <p class="card-text">
+              Explorez la salle des gardes, la porte Renaissance sculptée et le fameux dallage en étoile d'escarboucle guidé par les bâtisseurs du domaine.
+            </p>
+            <div class="card-footer-action">
+              <a href="#visites" class="btn-card-link">Consulter les horaires &rarr;</a>
+            </div>
           </div>
+        </div>
 
-          <div class="direct-contact-line">
-            <span class="d-label">Courrier électronique :</span>
-            <a href="mailto:chateaudelantis@gmail.com" class="d-val" style="color:var(--c-amber);">chateaudelantis@gmail.com</a>
+        <!-- CARTE 3 : LES JARDINS RENAISSANCE -->
+        <div class="experience-card">
+          <div class="card-media">
+            <img src="assets/images/jardin-lantis.webp" alt="Jardins Renaissance" class="card-img">
+            <div class="card-badge-dark"><i class="fa-solid fa-leaf"></i> PARC REMARQUABLE</div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">NATURE & BOTANIQUE</span>
+            <h3 class="card-title">Les Buis en Pointe de Diamant</h3>
+            <p class="card-text">
+              Déambulez dans un jardin Renaissance préservé, découvrez les alignements de buis géométriques, la roseraie ancienne et l'arboretum d'arbres rares.
+            </p>
+            <div class="card-footer-action">
+              <a href="#visites" class="btn-card-link">Découvrir le parc &rarr;</a>
+            </div>
           </div>
         </div>
 
       </div>
+
     </div>
   </section>
 
-  <!-- Footer Minimaliste -->
-  <footer class="editorial-footer">
-    <div class="footer-wrap">
-      <div>© 2026 Château de Lantis • Dégagnac (Lot) — Monument Historique privé</div>
-      <div>Présentation & valorisation patrimoniale</div>
+  <!-- ==================== UNIVERS ÉVÉNEMENTIEL : MARIAGES ET RÉCEPTIONS ==================== -->
+  <section class="grand-receptions" id="mariages">
+    <div class="receptions-wrapper">
+      
+      <div class="reception-visual-col">
+        <div class="spotlight-frame">
+          <img src="assets/images/flambeaux-lantis.webp" alt="Soirée au château" class="spotlight-img">
+          <div class="floating-stat-box">
+            <span class="stat-highlight">150</span>
+            <span class="stat-desc">Invités assis • Domaine privatisé le week-end complet</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reception-content-col">
+        <span class="gold-subtitle"><i class="fa-solid fa-champagne-glasses"></i> CADRE HISTORIQUE FERMÉ AU PUBLIC</span>
+        <h2 class="title-epic-h2">VOTRE MARIAGE DANS UNE FORTERESSE PRIVATISÉE</h2>
+        
+        <p class="reception-p">
+          Offrez à vos proches l'émotion d'un lieu chargé d'âme. Le Château de Lantis n'impose aucun prestataire : vous composez votre événement sur-mesure, du cocktail dans les parterres Renaissance jusqu'au dîner sous les étoiles illuminé aux flambeaux.
+        </p>
+
+        <div class="checklist-grid">
+          <div class="check-item">
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="check-content">
+              <strong>Exclusivité intégrale</strong>
+              <span>Le domaine entier vous est réservé pour le week-end</span>
+            </div>
+          </div>
+
+          <div class="check-item">
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="check-content">
+              <strong>Libre de traiteur</strong>
+              <span>Aucun droit de bouchon, choix 100% libre</span>
+            </div>
+          </div>
+
+          <div class="check-item">
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="check-content">
+              <strong>Hébergements sur site</strong>
+              <span>Gîtes et chambres de charme pour loger vos proches</span>
+            </div>
+          </div>
+
+          <div class="check-item">
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="check-content">
+              <strong>Ambiance féerique</strong>
+              <span>Mise en lumière aux flambeaux de la cour d'honneur</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reception-action-strip">
+          <a href="mailto:chateaudelantis@gmail.com?subject=Demande%20de%20devis%20Mariage%20au%20Ch%C3%A2teau%20de%20Lantis" class="btn-fire-large">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Recevoir la brochure mariage & tarifs</span>
+          </a>
+          <div class="phone-contact-pill">
+            <i class="fa-solid fa-phone"></i>
+            <span>Ligne directe : <a href="tel:0632960089"><strong>06 32 96 00 89</strong></a></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== HORAIRES & TARIFS : ESPACE PRATIQUE VISITEURS ==================== -->
+  <section class="visit-hub-section" id="visites">
+    <div class="section-container">
+      
+      <div class="section-title-wrap">
+        <span class="gold-subtitle"><i class="fa-solid fa-calendar-check"></i> ORGANISER VOTRE VISITE</span>
+        <h2 class="section-cinema-title">HORAIRES & TARIFS 2026</h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="hub-grid">
+        
+        <!-- BOX 1 : CALENDRIER DES SAISONS -->
+        <div class="hub-card">
+          <div class="hub-card-header">
+            <i class="fa-solid fa-clock"></i> Périodes & Horaires d'Ouverture
+          </div>
+          <div class="hub-card-body">
+            
+            <div class="hub-row">
+              <div class="hub-row-label">
+                <strong>Haute Saison (Juillet & Août)</strong>
+                <span>Ouvert 7 jours sur 7</span>
+              </div>
+              <div class="hub-row-value gold-time">10h00–12h00 & 14h00–18h00</div>
+            </div>
+
+            <div class="hub-row">
+              <div class="hub-row-label">
+                <strong>Avril • Mai • Juin • Septembre</strong>
+                <span>Fermé le mardi</span>
+              </div>
+              <div class="hub-row-value gold-time">14h00 à 18h00</div>
+            </div>
+
+            <div class="hub-row">
+              <div class="hub-row-label">
+                <strong>Groupes & Scolaires (dès 10 pers.)</strong>
+                <span>Sur réservation préalable</span>
+              </div>
+              <div class="hub-row-value">Toute l'année sur RDV</div>
+            </div>
+
+            <div class="hub-row">
+              <div class="hub-row-label">
+                <strong>Nocturnes aux Flambeaux</strong>
+                <span>Soirées d'été théâtralisées</span>
+              </div>
+              <div class="hub-row-value">Sur inscription</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- BOX 2 : GRILLE TARIFAIRE OFFICIELLE -->
+        <div class="hub-card">
+          <div class="hub-card-header">
+            <i class="fa-solid fa-ticket"></i> Tarifs d'Accès aux Visites
+          </div>
+          <div class="hub-card-body">
+            
+            <div class="hub-row">
+              <div class="hub-row-label">
+                <strong>Plein Tarif Adulte</strong>
+                <span>Visite guidée complète intérieurs & jardins</span>
+              </div>
+              <div class="hub-price">10,00 €</div>
+            </div>
+
+            <div class="hub-row">
+              <div class="hub-row-label">
+                <strong>Tarif Réduit</strong>
+                <span>Jeunes de 12 à 18 ans & Étudiants</span>
+              </div>
+              <div class="hub-price">8,00 €</div>
+            </div>
+
+            <div class="hub-row">
+              <div class="hub-row-label">
+                <strong>Enfants de moins de 12 ans</strong>
+                <span>Accompagnés d'un adulte</span>
+              </div>
+              <div class="hub-price free-tag">GRATUIT</div>
+            </div>
+
+            <div class="hub-row">
+              <div class="hub-row-label">
+                <strong>Tarif Groupe (dès 10 personnes)</strong>
+                <span>Accueil privilégié par les propriétaires</span>
+              </div>
+              <div class="hub-price">8,00 € <small>/ pers.</small></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hub-callout-banner">
+        <div class="callout-content">
+          <i class="fa-solid fa-circle-info"></i>
+          <div>
+            <strong>Visite guidée en anglais disponible sur réservation</strong>
+            <span>Guided tours available in English upon advance request.</span>
+          </div>
+        </div>
+        <a href="tel:0565411147" class="btn-outline-gold"><i class="fa-solid fa-phone"></i> Ligne fixe : 05 65 41 11 47</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== RÉCIT HISTORIQUE PUISSANT ==================== -->
+  <section class="epic-story" id="epopee">
+    <div class="epic-container">
+      <div class="epic-badge">UNE ÉPOPÉE DE 40 ANS</div>
+      <h2 class="epic-title">DE LA RUINE OUBLIÉE AU JOYAU RETOUVÉ</h2>
+      <p class="epic-paragraph">
+        Bâti en 1460 au sortir de la guerre de Cent Ans, Lantis dominait fièrement la vallée avant que les affres du temps ne le transforment en carrière de pierres et en dépotoir communal. Dans les années 1990, <strong>Françoise et Michel Barbier-Damiette</strong> ont entrepris une œuvre titanesque : déterrer la forteresse à la force des bras et reconstituer patiemment chaque voûte, chaque dallage, chaque parterre.
+      </p>
+      <div class="epic-quote-author">
+        “Sauvegarder ce monument était le combat d'une vie, le faire vivre pour vous est notre plus grande joie.”
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LOCALISATION & CONTACT ==================== -->
+  <section class="access-section" id="contact">
+    <div class="section-container">
+      
+      <div class="access-grid">
+        
+        <div class="access-card">
+          <div class="access-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Accès au Domaine</h3>
+          <p>
+            <strong>Château de Lantis</strong><br>
+            Hameau de Lantis<br>
+            46340 Dégagnac (Lot, Occitanie)
+          </p>
+          <span class="access-dist">À 25 min de Sarlat-la-Canéda et de Gourdon</span>
+          <div class="parking-badge"><i class="fa-solid fa-square-parking"></i> Parking gratuit voitures et autocars</div>
+        </div>
+
+        <div class="access-card spotlight-access">
+          <div class="access-icon"><i class="fa-solid fa-headset"></i></div>
+          <h3>Contacts Directs</h3>
+          <p>Pour réserver une visite de groupe ou organiser votre mariage :</p>
+          
+          <div class="contact-buttons-stack">
+            <a href="tel:0632960089" class="btn-fire">
+              <i class="fa-solid fa-mobile-screen"></i> 06 32 96 00 89 (Portable)
+            </a>
+            <a href="tel:0565411147" class="btn-glass-epic">
+              <i class="fa-solid fa-phone"></i> 05 65 41 11 47 (Fixe)
+            </a>
+            <a href="mailto:chateaudelantis@gmail.com" class="btn-gold-epic">
+              <i class="fa-solid fa-envelope"></i> chateaudelantis@gmail.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER MAJESTUEUX -->
+  <footer class="cinema-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">CHÂTEAU DE LANTIS</span>
+        <span class="footer-location">Dégagnac (Lot) • Monument Historique Classé & Jardin Remarquable</span>
+      </div>
+      <div class="footer-right">
+        <span>Site officiel de présentation • Saison 2026</span>
+      </div>
     </div>
   </footer>
 
